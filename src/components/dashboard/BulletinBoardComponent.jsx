@@ -8,6 +8,7 @@ import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Checkbox from '@material-ui/core/Checkbox';
 import Avatar from '@material-ui/core/Avatar';
 
+import DashboardBulletinBoard from '../../assets/DashboardBulletinBoard'
 
 const bulletinboardStyles = makeStyles((theme) => ({
   root: {
@@ -35,30 +36,9 @@ const BulletinBoardComponent = () => {
   };
     
     return (
-        <div>
-            Bulletin Board
-            <List dense className={classes.root}>
-                {[0, 1, 2, 3].map((value) => {
-                    const labelId = `checkbox-list-secondary-label-${value}`;
-                    return (
-                        <ListItem key={value} button>
-                            <ListItemAvatar>
-                                <Avatar
-                                />
-                            </ListItemAvatar>
-                            <ListItemText id={labelId} primary={`Student ${value + 1}`} />
-                            <ListItemSecondaryAction>
-                                <Checkbox
-                                    edge="end"
-                                    onChange={handleToggle(value)}
-                                    checked={checked.indexOf(value) !== -1}
-                                    inputProps={{ 'aria-labelledby': labelId }}
-                                />
-                            </ListItemSecondaryAction>
-                        </ListItem>
-                    );
-                })}
-            </List>
+        <div class="section-container">
+           <div class="section-title">Bulletin Board</div>
+            <DashboardBulletinBoard/>
         </div>
     )
 }

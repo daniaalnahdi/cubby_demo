@@ -1,36 +1,29 @@
-import React from 'react'
-import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import Button from '@material-ui/core/Button';
+import React from 'react';
+import { Grid } from '@material-ui/core';
 
-const headerStyles = makeStyles((theme) => ({
-    root: {
-        marginBottom:'30px',
-    }
-}));
+import Menu from '../assets/Menu';
 
 const HeaderComponent = () => {
-    const header = headerStyles();
-    return (
-        <Paper className={header.root}>
-            <Button>Cubby Logo</Button>
-            <Tabs
-                value="100"
-                onChange="yes"
-                indicatorColor="primary"
-                textColor="primary"
-                centered
-            >
-                <Tab label="Dashboard" />
-                <Tab label="Feedback" />
-                <Tab label="Student List" />
-                <Tab label="Directory" />
-                <Button>Inbox</Button>
-            </Tabs>
-        </Paper>
-    )
-}
+  return (
+    <header>
+      <Grid container direction='row' spacing='3'>
+        <Grid item xs='2'>
+          <Menu />
+        </Grid>
+        <Grid item xs='2'>
+          {/* Cubby Logo Here */}
+        </Grid>
+        <Grid item xs='8'>
+          <ul>
+            <li>Dashboard</li>
+            <li>Feedback</li>
+            <li>Directory</li>
+            <li>Inbox</li>
+          </ul>
+        </Grid>
+      </Grid>
+    </header>
+  );
+};
 
-export default HeaderComponent
+export default HeaderComponent;

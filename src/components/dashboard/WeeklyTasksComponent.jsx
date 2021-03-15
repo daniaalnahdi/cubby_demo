@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -16,21 +16,19 @@ import Button from '@material-ui/core/Button';
 
 import Avatar from '@material-ui/core/Avatar';
 
-
-
 const cardStyles = makeStyles((theme) => ({
-    root: {
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'space-around',
-        overflow: 'hidden',
-    },
+  root: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+    overflow: 'hidden',
+  },
 }));
 
 const barStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.paper,
-        width: 700,
+    width: 700,
   },
 }));
 
@@ -39,7 +37,7 @@ function TabPanel(props) {
 
   return (
     <div
-      role="tabpanel"
+      role='tabpanel'
       hidden={value !== index}
       id={`full-width-tabpanel-${index}`}
       aria-labelledby={`full-width-tab-${index}`}
@@ -68,111 +66,112 @@ function a11yProps(index) {
 }
 
 const WeeklyTasksComponent = () => {
-    const cards = cardStyles();
-    const bars = barStyles();
-    const [value, setValue] = React.useState(0);
-    
-    const handleChange = (event, newValue) => {
+  const cards = cardStyles();
+  const bars = barStyles();
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-    return (
-        <div>
-            <div className={bars.root}>
-                <AppBar position="static">
-                <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
-                    <Tab label="Monday" {...a11yProps(0)} />
-                    <Tab label="Tuesday" {...a11yProps(1)} />
-                    <Tab label="Wednesday" {...a11yProps(2)} />
-                    <Tab label="Thursday" {...a11yProps(3)} />
-                    <Tab label="Friday" {...a11yProps(4)} />
-                </Tabs>
-            </AppBar>
-            </div>
-            
-            <TabPanel value={value} index={0}>
-                <div className={cards.root}>
-                    <Card>
-                        <CardActionArea>
-                            <CardMedia
-                                image
-                                //Add emoji img here
-                            />
-                            <CardContent>
-                                <Typography gutterBottom variant="h5" component="h2">
-                                    Fossiles Video
-                                    </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                        <CardActions>
-                            <Button size="small" color="primary">
-                                Homework
-                                </Button>
-                            <Button size="small" color="primary">
-                                In-Class
-                                </Button>
-                        </CardActions>
-                    </Card>
+  return (
+    <div class='section-container section-container-height-auto '>
+      <div className={bars.root}>
+        <AppBar position='static'>
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            aria-label='simple tabs example'
+          >
+            <Tab label='Monday' {...a11yProps(0)} />
+            <Tab label='Tuesday' {...a11yProps(1)} />
+            <Tab label='Wednesday' {...a11yProps(2)} />
+            <Tab label='Thursday' {...a11yProps(3)} />
+            <Tab label='Friday' {...a11yProps(4)} />
+          </Tabs>
+        </AppBar>
+      </div>
 
-                    <Card>
-                        <CardActionArea>
-                            <CardMedia
-                            //Add emoji img here
-                            />
-                            <CardContent>
-                                <Typography gutterBottom variant="h5" component="h2">
-                                    Math: Addition
-                            </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                        <CardActions>
-                            <Button size="small" color="primary">
-                                Homework
-                                </Button>
-                            <Button size="small" color="primary">
-                                In-Class
-                                </Button>
-                        </CardActions>
-                    </Card>
+      <TabPanel value={value} index={0}>
+        <div className={cards.root}>
+          <Card>
+            <CardActionArea>
+              <CardMedia
+                image
+                //Add emoji img here
+              />
+              <CardContent>
+                <Typography gutterBottom variant='h5' component='h2'>
+                  Fossiles Video
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button size='small' color='primary'>
+                Homework
+              </Button>
+              <Button size='small' color='primary'>
+                In-Class
+              </Button>
+            </CardActions>
+          </Card>
 
-                    <Card>
-                        <CardActionArea>
-                            <CardMedia
-                                //Add emoji img here
-                            />
-                            <CardContent>
-                                <Typography gutterBottom variant="h5" component="h2">
-                                    Name the planets
-                                    </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                        <CardActions>
-                            <Button size="small" color="primary">
-                                Homework
-                                </Button>
-                            <Button size="small" color="primary">
-                                In-Class
-                                </Button>
-                        </CardActions>
+          <Card>
+            <CardActionArea>
+              <CardMedia
+              //Add emoji img here
+              />
+              <CardContent>
+                <Typography gutterBottom variant='h5' component='h2'>
+                  Math: Addition
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button size='small' color='primary'>
+                Homework
+              </Button>
+              <Button size='small' color='primary'>
+                In-Class
+              </Button>
+            </CardActions>
+          </Card>
 
-                    </Card>
-                        </div>
-                        </TabPanel>
-                    <TabPanel value={value} index={1}>
-                        Classes for Tuesday
-                        </TabPanel>
-                    <TabPanel value={value} index={2}>
-                        Classes for Wednesday
-                        </TabPanel>
-                    <TabPanel value={value} index={3}>
-                        Classes for Thursday
-                        </TabPanel>
-                    <TabPanel value={value} index={4}>
-                        Classes for Friday
-                        </TabPanel>
-                </div>
-        
-        
-    )
-}
+          <Card>
+            <CardActionArea>
+              <CardMedia
+              //Add emoji img here
+              />
+              <CardContent>
+                <Typography gutterBottom variant='h5' component='h2'>
+                  Name the planets
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button size='small' color='primary'>
+                Homework
+              </Button>
+              <Button size='small' color='primary'>
+                In-Class
+              </Button>
+            </CardActions>
+          </Card>
+        </div>
+      </TabPanel>
+      <TabPanel value={value} index={1}>
+        Classes for Tuesday
+      </TabPanel>
+      <TabPanel value={value} index={2}>
+        Classes for Wednesday
+      </TabPanel>
+      <TabPanel value={value} index={3}>
+        Classes for Thursday
+      </TabPanel>
+      <TabPanel value={value} index={4}>
+        Classes for Friday
+      </TabPanel>
+    </div>
+  );
+};
 
-export default WeeklyTasksComponent
+export default WeeklyTasksComponent;

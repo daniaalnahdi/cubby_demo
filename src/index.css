@@ -1,7 +1,39 @@
-/* TODO Color Vars */
+:root {
+  --p-color: #682cda;
+  --bg-color: #f7f7fc;
+}
 
 .section-container {
-    background-color: grey;
-    border-radius: 1em;
-    height: 100%;
+  background-color: var(--bg-color);
+  border-radius: 30px;
+  height: 100%;
+  padding: 0.75em 1em;
+margin-bottom: 1em;
+}
+
+.section-container-height-auto {
+  height: auto;
+}
+
+.section-title {
+  font-size: 24px;
+}
+
+.secondary-btn {
+  border: 2px solid var(--p-color);
+  box-sizing: border-box;
+  border-radius: 40px;
+  font-size: 14px;
+  padding: 1em;
+}
+
+/* Header */
+header ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+header ul li {
+  margin: 0 1em;
 }
