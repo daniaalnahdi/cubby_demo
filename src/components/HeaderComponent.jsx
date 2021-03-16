@@ -6,14 +6,14 @@ import Menu from '../assets/Menu';
 const HeaderComponent = () => {
   return (
     <header>
-      <Grid container direction='row' spacing='3'>
-        <Grid item xs='2'>
+      <Grid container direction='row' spacing={3}>
+        <Grid item xs={2}>
           <Menu />
         </Grid>
-        <Grid item xs='2'>
+        <Grid item xs={2}>
           {/* Cubby Logo Here */}
         </Grid>
-        <Grid item xs='8'>
+        <Grid item xs={8}>
           <ul>
             <li>Dashboard</li>
             <li>Feedback</li>

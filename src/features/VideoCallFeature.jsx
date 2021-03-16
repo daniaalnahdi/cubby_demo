@@ -8,7 +8,7 @@ import VideoCallView from '../components/videocall/VideocallViewComponent';
 const VideoCallFeature = () => {
   return (
     <>
-      <Grid container direction='row' spacing='2' alignContent='center'>
+      <Grid container direction='row' spacing={2} alignContent='center'>
         <Grid item xs={1}></Grid>
         <Grid item xs={10} alignItems='center'>
           <VideoCallInfoComponent/>
@@ -17,7 +17,7 @@ const VideoCallFeature = () => {
       </Grid>
       <br />
       
-      <Grid container direction='row' spacing='2' alignContent='center'>
+      <Grid container direction='row' spacing={2} alignContent='center'>
         <Grid item xs={1}></Grid>
         <Grid item xs={10} alignItems='center'>
           <VideoCallView/>

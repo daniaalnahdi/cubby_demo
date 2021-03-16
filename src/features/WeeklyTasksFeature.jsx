@@ -15,13 +15,13 @@ const WeeklyTasksFeature = () => {
   return (
     <>
       <HeaderComponent />
-      <Grid container direction='row' spacing='2'>
+      <Grid container direction='row' spacing={2}>
         <Grid item xs={1}>
           <SidebarComponent />
         </Grid>
         <Grid item xs={7}>
           <WeeklyTasksComponent />
-          <Grid container direction='row' spacing='2'>
+          <Grid container direction='row' spacing={2}>
             <Grid item xs={5}>
               <BulletinBoardComponent />
             </Grid>

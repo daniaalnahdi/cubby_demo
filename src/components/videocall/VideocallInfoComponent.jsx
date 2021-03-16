@@ -12,8 +12,8 @@ const VideocallInfoComponent = ({
 }) => {
   return (
     <div className='section-container'>
-          <Grid container direction='row' spacing='3' alignItems="center">
-              <Grid item xs='3'>
+          <Grid container direction='row' spacing={3} alignItems="center">
+              <Grid item xs={3}>
                   <h2>Art Class</h2>
                   <div>12:00 PM - 1:00 PM</div>
               </Grid>
