@@ -51,14 +51,13 @@ const GradingFeature = () => {
         </Grid>
         <Grid item xs={11}>
           {isGrading ? (
-            <GradeAllComponent />
+            <GradeAllComponent completeTask={openModal} />
           ) : (
             <SubmissionsListComponent toggleIsGrading={toggleIsGrading} />
           )}
         </Grid>
       </Grid>
       {/* Popup */}
-      <button onClick={openModal}>Open Modal</button>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
