@@ -5,6 +5,7 @@ import {
   Route,
   Link,
   Redirect,
+  useLocation,
 } from 'react-router-dom';
 import { Container } from '@material-ui/core';
 
@@ -19,7 +20,7 @@ const App = () => {
     <Container>
       <Router>
         <nav>
-          <ul>
+          <ul className='features-nav'>
             <li>
               <Link to='/tasks-feature'>Weekly Tasks</Link>
             </li>
@@ -33,12 +34,16 @@ const App = () => {
         </nav>
         <Switch>
           <Route path='/tasks-feature'>
+            <h4>Description of tasks feature</h4>
             <WeeklyTasksFeature />
           </Route>
           <Route path='/grades-feature'>
+            <h4>Description of grades feature</h4>
+
             <GradingFeature />
           </Route>
           <Route path='/video-feature'>
+            <h4>Description of video call feature</h4>
             <VideoCallFeature />
           </Route>
           <Redirect to='/tasks-feature' />

@@ -4,7 +4,7 @@ const DashboardInbox = () => {
   return (
     <svg
       width='100%'
-      height='auto'
+      height='85%'
       viewBox='0 0 497 284'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'

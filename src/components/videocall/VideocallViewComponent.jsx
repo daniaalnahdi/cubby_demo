@@ -1,14 +1,18 @@
 import React from 'react';
-import { Grid } from '@material-ui/core';
 
-import VideocallGalleryView from '../../assets/VideocallGalleryView';
+import VideoCallButtons from '../../assets/VideoCallButtons';
+import VideoCallStudentGallery from './VideoCallStudentGallery';
 
-const VideocallView = () => {
-    return (
-        <div className='section-container'>
-            <VideocallGalleryView />
-        </div>
-    );
+const VideoCallView = () => {
+  return (
+    <div className='section-container'>
+      <div className='tooltip'>
+        <VideoCallStudentGallery />
+        <span className='tooltiptext'>1. Pick any student to call on</span>
+      </div>
+      <VideoCallButtons />
+    </div>
+  );
 };
 
-export default VideocallView;
+export default VideoCallView;
