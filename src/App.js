@@ -1,18 +1,49 @@
 import React, { useState } from 'react';
-import {Container} from '@material-ui/core'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Redirect,
+} from 'react-router-dom';
+import { Container } from '@material-ui/core';
 
-import CubbyAppView from './views/CubbyAppView';
-import FeaturesListView from './views/FeaturesListView';
+import WeeklyTasksFeature from './features/WeeklyTasksFeature';
+import GradingFeature from './features/GradingFeature';
+import VideoCallFeature from './features/VideoCallFeature';
 
-import './index.css'
+import './index.css';
 
 const App = () => {
-  const [selectedFeature, setSelectedFeature] = useState(1);
-
   return (
     <Container>
-      <FeaturesListView selectFeature={(id) => setSelectedFeature(id)} />
-      <CubbyAppView selectedFeature={selectedFeature} />
+      <Router>
+        <nav>
+          <ul>
+            <li>
+              <Link to='/tasks-feature'>Weekly Tasks</Link>
+            </li>
+            <li>
+              <Link to='/grades-feature'>Grading</Link>
+            </li>
+            <li>
+              <Link to='/video-feature'>Video</Link>
+            </li>
+          </ul>
+        </nav>
+        <Switch>
+          <Route path='/tasks-feature'>
+            <WeeklyTasksFeature />
+          </Route>
+          <Route path='/grades-feature'>
+            <GradingFeature />
+          </Route>
+          <Route path='/video-feature'>
+            <VideoCallFeature />
+          </Route>
+          <Redirect to='/tasks-feature' />
+        </Switch>
+      </Router>
     </Container>
   );
 };

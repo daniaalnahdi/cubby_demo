@@ -2,6 +2,7 @@ import React from 'react';
 import { Grid } from '@material-ui/core';
 
 import Menu from '../assets/Menu';
+import Logo from '../assets/Logo';
 
 const HeaderComponent = () => {
   return (
@@ -11,7 +12,7 @@ const HeaderComponent = () => {
           <Menu />
         </Grid>
         <Grid item xs={2}>
-          {/* Cubby Logo Here */}
+          <Logo />
         </Grid>
         <Grid item xs={8}>
           <ul>
