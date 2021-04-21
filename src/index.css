@@ -121,3 +121,37 @@ header ul li {
     opacity: 1;
   }
 }
+
+/* Weekly Tasks Component */
+.weekly-tasks-days {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  background-color: #d9dbe9;
+  border-radius: 25px;
+  padding: 0;
+}
+
+.weekly-tasks-days li {
+  margin: 0 0.5rem;
+  padding: 0.5em;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.5s ease;
+}
+
+.weekly-tasks-days li:first-child {
+  margin-left: 0 !important;
+}
+
+.weekly-tasks-days li:last-child {
+  margin-right: 0 !important;
+}
+
+.weekly-tasks-days li.selected {
+  background-color: white;
+}
+
+.weekly-tasks-thumbnails {
+  min-height: 180px;
+}

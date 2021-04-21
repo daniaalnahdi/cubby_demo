@@ -1,7 +1,6 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
 
-import SecondaryButtonComponent from '../SecondaryButtonComponent';
 
 const SubmissionRowComponent = (props) => {
   return (
@@ -25,10 +24,9 @@ const SubmissionRowComponent = (props) => {
         </Grid>
         <Grid item xs={2}>
           <div class='tooltip'>
-            <SecondaryButtonComponent
-              label='Grade All'
-              clickHandler={props.toggleIsGrading}
-            />
+            <button class='secondary-btn' onClick={props.toggleIsGrading}>
+              Grade All
+            </button>
             <span class='tooltiptext'>1. Click to view the assignment</span>
           </div>
         </Grid>
