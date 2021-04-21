@@ -41,17 +41,14 @@ const App = () => {
         <Switch>
           <Route path='/tasks-feature'>
             <MainDemoNav />
-            <h4>Description of tasks feature</h4>
             <WeeklyTasksFeature />
           </Route>
           <Route path='/grades-feature'>
             <MainDemoNav />
-            <h4>Description of grades feature</h4>
             <GradingFeature />
           </Route>
           <Route path='/video-feature'>
             <MainDemoNav />
-            <h4>Description of video call feature</h4>
             <VideoCallFeature />
           </Route>
           <Route path='/'>
