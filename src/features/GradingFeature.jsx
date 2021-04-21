@@ -35,10 +35,7 @@ const GradingFeature = () => {
           )}
         </Grid>
       </Grid>
-      <CompletedPopupComponent
-        isOpen={isTaskComplete}
-        onRequestClose={() => setIsTaskComplete(false)}
-      >
+      <CompletedPopupComponent isOpen={isTaskComplete}>
         Completed Grading Task
       </CompletedPopupComponent>
     </>

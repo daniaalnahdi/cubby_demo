@@ -15,18 +15,12 @@ const customStyles = {
   },
 };
 
-const CompletedPopupComponent = ({ children, isOpen }) => {
+const GenericPopupComponent = ({ children, isOpen, onRequestClose }) => {
   return (
-    <Modal
-      isOpen={isOpen}
-      onRequestClose={() => window.location.reload()}
-      style={customStyles}
-    >
-      <h2>Task Completed!</h2>
+    <Modal isOpen={isOpen} onRequestClose={onRequestClose} style={customStyles} >
       {children}
-      <button onClick={() => window.location.reload()}>Re-do task</button>
     </Modal>
   );
 };
 
-export default CompletedPopupComponent;
+export default GenericPopupComponent;
