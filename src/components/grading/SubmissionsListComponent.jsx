@@ -27,7 +27,6 @@ const SubmissionsListComponent = (props) => {
           Submitted
         </Grid>
       </Grid>
-      {/* TODO: use dummy data and pass in params */}
       <SubmissionRowComponent {...props} />
     </div>
   );

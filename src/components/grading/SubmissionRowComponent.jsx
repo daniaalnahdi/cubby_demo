@@ -3,10 +3,7 @@ import { Grid } from '@material-ui/core';
 
 import SecondaryButtonComponent from '../SecondaryButtonComponent';
 
-const SubmissionRowComponent = (
-  props,
-  { emoji, title, subtitle, hasAudio, date, submitted }
-) => {
+const SubmissionRowComponent = (props) => {
   return (
     <div>
       <Grid container direction='row' spacing={3} alignItems='center'>
