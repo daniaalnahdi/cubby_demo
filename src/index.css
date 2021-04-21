@@ -80,8 +80,6 @@ header ul li {
 .tooltip {
   position: relative;
   display: inline-block;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
 }
 
 /* Tooltip text */
@@ -113,23 +111,6 @@ header ul li {
   border-width: 5px;
   border-style: solid;
   border-color: black transparent transparent transparent;
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 /* Weekly Tasks Component */
