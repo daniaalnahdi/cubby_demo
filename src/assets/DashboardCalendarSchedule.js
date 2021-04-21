@@ -15,7 +15,7 @@ const DashboardCalendarSchedule = () => {
         x2='57'
         y2='267.25'
         stroke='#A0A3BD'
-        stroke-width='0.5'
+        strokeWidth='0.5'
       />
       <path
         d='M0.608 262.76V261.432H3.616V273H2.144V262.76H0.608ZM18.0786 265.112C18.0786 266.04 17.7586 266.813 17.1186 267.432C16.4893 268.04 15.524 268.344 14.2226 268.344H12.0786V273H10.6226V261.848H14.2226C15.4813 261.848 16.436 262.152 17.0866 262.76C17.748 263.368 18.0786 264.152 18.0786 265.112ZM14.2226 267.144C15.0333 267.144 15.6306 266.968 16.0146 266.616C16.3986 266.264 16.5906 265.763 16.5906 265.112C16.5906 263.736 15.8013 263.048 14.2226 263.048H12.0786V267.144H14.2226ZM31.2003 261.928V273H29.7443V264.744L26.0643 273H25.0403L21.3443 264.728V273H19.8883V261.928H21.4563L25.5523 271.08L29.6483 261.928H31.2003Z'
@@ -37,10 +37,10 @@ const DashboardCalendarSchedule = () => {
           height='49.5'
           rx='16.4167'
           stroke='#F7F7FC'
-          stroke-width='0.5'
+          strokeWidth='0.5'
         />
       </g>
-      <circle cx='296' cy='242' r='12' fill='white' fill-opacity='0.5' />
+      <circle cx='296' cy='242' r='12' fill='white' fillOpacity='0.5' />
       <path
         d='M296.977 242L292.852 237.875L294.03 236.697L299.333 242L294.03 247.303L292.852 246.125L296.977 242Z'
         fill='url(#paint1_linear)'
@@ -55,7 +55,7 @@ const DashboardCalendarSchedule = () => {
         x2='57'
         y2='217.25'
         stroke='#A0A3BD'
-        stroke-width='0.5'
+        strokeWidth='0.5'
       />
       <line
         x1='395'
@@ -63,7 +63,7 @@ const DashboardCalendarSchedule = () => {
         x2='57'
         y2='467.25'
         stroke='#A0A3BD'
-        stroke-width='0.5'
+        strokeWidth='0.5'
       />
       <path
         d='M0.608 212.76V211.432H3.616V223H2.144V212.76H0.608ZM5.941 221.832C7.29567 220.744 8.357 219.853 9.125 219.16C9.893 218.456 10.5383 217.725 11.061 216.968C11.5943 216.2 11.861 215.448 11.861 214.712C11.861 214.019 11.6903 213.475 11.349 213.08C11.0183 212.675 10.4797 212.472 9.733 212.472C9.00767 212.472 8.44233 212.701 8.037 213.16C7.64233 213.608 7.429 214.211 7.397 214.968H5.989C6.03167 213.773 6.39433 212.851 7.077 212.2C7.75967 211.549 8.63967 211.224 9.717 211.224C10.8157 211.224 11.685 211.528 12.325 212.136C12.9757 212.744 13.301 213.581 13.301 214.648C13.301 215.533 13.0343 216.397 12.501 217.24C11.9783 218.072 11.381 218.808 10.709 219.448C10.037 220.077 9.17833 220.813 8.133 221.656H13.637V222.872H5.941V221.832ZM27.2818 215.112C27.2818 216.04 26.9618 216.813 26.3218 217.432C25.6924 218.04 24.7271 218.344 23.4258 218.344H21.2818V223H19.8258V211.848H23.4258C24.6844 211.848 25.6391 212.152 26.2898 212.76C26.9511 213.368 27.2818 214.152 27.2818 215.112ZM23.4258 217.144C24.2364 217.144 24.8338 216.968 25.2178 216.616C25.6018 216.264 25.7938 215.763 25.7938 215.112C25.7938 213.736 25.0044 213.048 23.4258 213.048H21.2818V217.144H23.4258ZM40.4034 211.928V223H38.9474V214.744L35.2674 223H34.2434L30.5474 214.728V223H29.0914V211.928H30.6594L34.7554 221.08L38.8514 211.928H40.4034Z'
@@ -79,7 +79,7 @@ const DashboardCalendarSchedule = () => {
         x2='57'
         y2='167.25'
         stroke='#A0A3BD'
-        stroke-width='0.5'
+        strokeWidth='0.5'
       />
       <line
         x1='395'
@@ -87,7 +87,7 @@ const DashboardCalendarSchedule = () => {
         x2='57'
         y2='417.25'
         stroke='#A0A3BD'
-        stroke-width='0.5'
+        strokeWidth='0.5'
       />
       <path
         d='M0.608 162.76V161.432H3.616V173H2.144V162.76H0.608ZM5.733 162.76V161.432H8.741V173H7.269V162.76H5.733ZM22.3396 170.52H17.4756L16.5796 173H15.0436L19.0756 161.912H20.7556L24.7716 173H23.2356L22.3396 170.52ZM21.9236 169.336L19.9076 163.704L17.8916 169.336H21.9236ZM37.8409 161.928V173H36.3849V164.744L32.7049 173H31.6809L27.9849 164.728V173H26.5289V161.928H28.0969L32.1929 171.08L36.2889 161.928H37.8409Z'
@@ -103,7 +103,7 @@ const DashboardCalendarSchedule = () => {
         x2='57'
         y2='117.25'
         stroke='#A0A3BD'
-        stroke-width='0.5'
+        strokeWidth='0.5'
       />
       <line
         x1='395'
@@ -111,7 +111,7 @@ const DashboardCalendarSchedule = () => {
         x2='57'
         y2='367.25'
         stroke='#A0A3BD'
-        stroke-width='0.5'
+        strokeWidth='0.5'
       />
       <g filter='url(#filter1_d)'>
         <rect
@@ -129,10 +129,10 @@ const DashboardCalendarSchedule = () => {
           height='99.5'
           rx='16.4167'
           stroke='#F7F7FC'
-          stroke-width='0.5'
+          strokeWidth='0.5'
         />
       </g>
-      <circle cx='296' cy='167' r='12' fill='white' fill-opacity='0.5' />
+      <circle cx='296' cy='167' r='12' fill='white' fillOpacity='0.5' />
       <path
         d='M296.977 167L292.852 162.875L294.03 161.697L299.333 167L294.03 172.303L292.852 171.125L296.977 167Z'
         fill='url(#cal-paint3_linear)'
@@ -155,7 +155,7 @@ const DashboardCalendarSchedule = () => {
         x2='57'
         y2='67.25'
         stroke='#A0A3BD'
-        stroke-width='0.5'
+        strokeWidth='0.5'
       />
       <line
         x1='395'
@@ -163,7 +163,7 @@ const DashboardCalendarSchedule = () => {
         x2='57'
         y2='317.25'
         stroke='#A0A3BD'
-        stroke-width='0.5'
+        strokeWidth='0.5'
       />
       <path
         d='M2.864 69.896C2.97067 70.504 3.216 70.9733 3.6 71.304C3.99467 71.6347 4.52267 71.8 5.184 71.8C6.06933 71.8 6.72 71.4533 7.136 70.76C7.56267 70.0667 7.76533 68.8987 7.744 67.256C7.52 67.736 7.14667 68.1147 6.624 68.392C6.10133 68.6587 5.52 68.792 4.88 68.792C4.16533 68.792 3.52533 68.648 2.96 68.36C2.40533 68.0613 1.968 67.6293 1.648 67.064C1.328 66.4987 1.168 65.816 1.168 65.016C1.168 63.8747 1.49867 62.9573 2.16 62.264C2.82133 61.56 3.76 61.208 4.976 61.208C6.46933 61.208 7.51467 61.6933 8.112 62.664C8.72 63.6347 9.024 65.08 9.024 67C9.024 68.344 8.90133 69.4533 8.656 70.328C8.42133 71.2027 8.016 71.8693 7.44 72.328C6.87467 72.7867 6.096 73.016 5.104 73.016C4.016 73.016 3.168 72.7227 2.56 72.136C1.952 71.5493 1.60533 70.8027 1.52 69.896H2.864ZM5.12 67.56C5.83467 67.56 6.42133 67.3413 6.88 66.904C7.33867 66.456 7.568 65.8533 7.568 65.096C7.568 64.296 7.344 63.6507 6.896 63.16C6.448 62.6693 5.81867 62.424 5.008 62.424C4.26133 62.424 3.664 62.6587 3.216 63.128C2.77867 63.5973 2.56 64.216 2.56 64.984C2.56 65.7627 2.77867 66.3867 3.216 66.856C3.65333 67.3253 4.288 67.56 5.12 67.56ZM22.1678 70.52H17.3038L16.4078 73H14.8717L18.9038 61.912H20.5838L24.5998 73H23.0638L22.1678 70.52ZM21.7518 69.336L19.7358 63.704L17.7198 69.336H21.7518ZM37.669 61.928V73H36.213V64.744L32.533 73H31.509L27.813 64.728V73H26.357V61.928H27.925L32.021 71.08L36.117 61.928H37.669Z'
@@ -179,7 +179,7 @@ const DashboardCalendarSchedule = () => {
         x2='57'
         y2='17.25'
         stroke='#A0A3BD'
-        stroke-width='0.5'
+        strokeWidth='0.5'
       />
       <line
         x1='395'
@@ -187,7 +187,7 @@ const DashboardCalendarSchedule = () => {
         x2='57'
         y2='17.25'
         stroke='#A0A3BD'
-        stroke-width='0.5'
+        strokeWidth='0.5'
       />
       <g filter='url(#filter2_d)'>
         <rect
@@ -205,7 +205,7 @@ const DashboardCalendarSchedule = () => {
           height='49.5'
           rx='16.4167'
           stroke='#F7F7FC'
-          stroke-width='0.5'
+          strokeWidth='0.5'
         />
       </g>
       <circle cx='296' cy='42' r='12' fill='white' />
@@ -229,9 +229,9 @@ const DashboardCalendarSchedule = () => {
           width='262.667'
           height='116.667'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feColorMatrix
             in='SourceAlpha'
             type='matrix'
@@ -262,9 +262,9 @@ const DashboardCalendarSchedule = () => {
           width='262.667'
           height='166.667'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feColorMatrix
             in='SourceAlpha'
             type='matrix'
@@ -295,9 +295,9 @@ const DashboardCalendarSchedule = () => {
           width='262.667'
           height='116.667'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feColorMatrix
             in='SourceAlpha'
             type='matrix'
@@ -329,8 +329,8 @@ const DashboardCalendarSchedule = () => {
           y2='338.679'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#EB0055' />
-          <stop offset='1' stop-color='#FFFA80' />
+          <stop stopColor='#EB0055' />
+          <stop offset='1' stopColor='#FFFA80' />
         </linearGradient>
         <linearGradient
           id='cal-paint1_linear'
@@ -340,8 +340,8 @@ const DashboardCalendarSchedule = () => {
           y2='239.128'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#EB0055' />
-          <stop offset='1' stop-color='#FFFA80' />
+          <stop stopColor='#EB0055' />
+          <stop offset='1' stopColor='#FFFA80' />
         </linearGradient>
         <linearGradient
           id='cal-paint2_linear'
@@ -351,8 +351,8 @@ const DashboardCalendarSchedule = () => {
           y2='258.592'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#624AF2' />
-          <stop offset='1' stop-color='#50DDC3' />
+          <stop stopColor='#624AF2' />
+          <stop offset='1' stopColor='#50DDC3' />
         </linearGradient>
         <linearGradient
           id='cal-paint3_linear'
@@ -362,8 +362,8 @@ const DashboardCalendarSchedule = () => {
           y2='164.128'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#624AF2' />
-          <stop offset='1' stop-color='#50DDC3' />
+          <stop stopColor='#624AF2' />
+          <stop offset='1' stopColor='#50DDC3' />
         </linearGradient>
         <linearGradient
           id='cal-paint4_linear'
@@ -373,8 +373,8 @@ const DashboardCalendarSchedule = () => {
           y2='138.679'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#7433FF' />
-          <stop offset='1' stop-color='#FFA3FD' />
+          <stop stopColor='#7433FF' />
+          <stop offset='1' stopColor='#FFA3FD' />
         </linearGradient>
         <linearGradient
           id='cal-paint5_linear'
@@ -384,8 +384,8 @@ const DashboardCalendarSchedule = () => {
           y2='39.1276'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#7433FF' />
-          <stop offset='1' stop-color='#FFA3FD' />
+          <stop stopColor='#7433FF' />
+          <stop offset='1' stopColor='#FFA3FD' />
         </linearGradient>
       </defs>
     </svg>

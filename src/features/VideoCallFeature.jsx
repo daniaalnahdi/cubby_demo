@@ -9,11 +9,11 @@ const VideoCallFeature = () => {
   return (
     <>
       <Grid container direction='row' spacing={3} alignContent='center'>
-        <Grid item xs={12} alignItems='center'>
+        <Grid item xs={12}>
           <VideoCallInfoComponent />
         </Grid>
-        <Grid item xs={12} alignItems='center'></Grid>
-        <Grid item xs={12} alignItems='center'>
+        <Grid item xs={12}></Grid>
+        <Grid item xs={12}>
           <VideoCallView />
         </Grid>
       </Grid>

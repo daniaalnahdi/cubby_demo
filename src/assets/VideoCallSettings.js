@@ -4,7 +4,7 @@ const VideoCallSettings = () => {
   return (
     <svg
       width='100%'
-      height='auto'
+      height='100%'
       viewBox='0 0 492 88'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
@@ -52,9 +52,9 @@ const VideoCallSettings = () => {
           width='268'
           height='80'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feColorMatrix
             in='SourceAlpha'
             type='matrix'

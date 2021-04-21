@@ -27,17 +27,21 @@ const WeeklyTasksComponent = () => {
         <Grid item xs={9}>
           <div className='tooltip'>
             <ul className='weekly-tasks-days' onClick={selectDay}>
-              <li className={selectedDay === 'Monday' && 'selected'}>Monday</li>
-              <li className={selectedDay === 'Tuesday' && 'selected'}>
+              <li className={selectedDay === 'Monday' ? 'selected' : ''}>
+                Monday
+              </li>
+              <li className={selectedDay === 'Tuesday' ? 'selected' : ''}>
                 Tuesday
               </li>
-              <li className={selectedDay === 'Wednesday' && 'selected'}>
+              <li className={selectedDay === 'Wednesday' ? 'selected' : ''}>
                 Wednesday
               </li>
-              <li className={selectedDay === 'Thursday' && 'selected'}>
+              <li className={selectedDay === 'Thursday' ? 'selected' : ''}>
                 Thursday
               </li>
-              <li className={selectedDay === 'Friday' && 'selected'}>Friday</li>
+              <li className={selectedDay === 'Friday' ? 'selected' : ''}>
+                Friday
+              </li>
             </ul>
             {!hasSelectedDay && (
               <span className='tooltiptext'>1. Select a day of the week</span>

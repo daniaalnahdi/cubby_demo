@@ -21,6 +21,7 @@ const CompletedPopupComponent = ({ children, isOpen }) => {
       isOpen={isOpen}
       onRequestClose={() => window.location.reload()}
       style={customStyles}
+      ariaHideApp={false}
     >
       <h2>Task Completed!</h2>
       {children}

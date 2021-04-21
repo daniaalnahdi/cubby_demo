@@ -2,7 +2,7 @@ import React from 'react';
 
 const WeeklyTasksThumbnails = () => {
   return (
-    <svg width='100%' height='auto' viewBox='0 0 921 242' fill='none'>
+    <svg width='100%' height='100%' viewBox='0 0 921 242' fill='none'>
       <circle cx='909' cy='113' r='12' fill='#A0A3BD' />
       <path
         d='M909.977 113L905.852 108.875L907.03 107.697L912.333 113L907.03 118.303L905.852 117.125L909.977 113Z'
@@ -24,7 +24,7 @@ const WeeklyTasksThumbnails = () => {
           height='208'
           rx='15.6667'
           stroke='#D9DBE9'
-          stroke-width='2'
+          strokeWidth='2'
         />
       </g>
       <path
@@ -70,7 +70,7 @@ const WeeklyTasksThumbnails = () => {
           height='208'
           rx='15.6667'
           stroke='#D9DBE9'
-          stroke-width='2'
+          strokeWidth='2'
         />
       </g>
       <path
@@ -108,9 +108,9 @@ const WeeklyTasksThumbnails = () => {
           width='301'
           height='242'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feColorMatrix
             in='SourceAlpha'
             type='matrix'
@@ -147,9 +147,9 @@ const WeeklyTasksThumbnails = () => {
           width='56'
           height='56'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feColorMatrix
             in='SourceAlpha'
             type='matrix'
@@ -180,9 +180,9 @@ const WeeklyTasksThumbnails = () => {
           width='301'
           height='242'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feColorMatrix
             in='SourceAlpha'
             type='matrix'
@@ -219,9 +219,9 @@ const WeeklyTasksThumbnails = () => {
           width='56'
           height='56'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feColorMatrix
             in='SourceAlpha'
             type='matrix'

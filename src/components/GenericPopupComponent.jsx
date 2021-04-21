@@ -17,7 +17,12 @@ const customStyles = {
 
 const GenericPopupComponent = ({ children, isOpen, onRequestClose }) => {
   return (
-    <Modal isOpen={isOpen} onRequestClose={onRequestClose} style={customStyles} >
+    <Modal
+      isOpen={isOpen}
+      onRequestClose={onRequestClose}
+      style={customStyles}
+      ariaHideApp={false}
+    >
       {children}
     </Modal>
   );
