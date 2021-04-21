@@ -7,11 +7,12 @@ const VideoCallStudentThumbnail = ({
   src,
   pulledAside,
   updatePullAside,
+  updateReturnedToClass,
 }) => {
   return (
     <Grid item xs={3}>
       <div
-        className={`video-student-thumbnail ${
+        className={`video-student-thumbnail tooltip ${
           pulledAside !== 0 && pulledAside !== idx && 'fade'
         } ${pulledAside == idx && 'focus'}`}
       >
@@ -26,13 +27,24 @@ const VideoCallStudentThumbnail = ({
             )}
             {pulledAside === idx && (
               <>
-                <button onClick={() => updatePullAside(0)}>
+                <button
+                  onClick={() => {
+                    updatePullAside(0);
+                    updateReturnedToClass();
+                  }}
+                >
                   Return to Class
                 </button>
               </>
             )}
           </div>
         </div>
+        {pulledAside === idx && (
+          <span className='tooltiptext'>
+            2. When you're done with your conversation, hover over the student
+            and click to return to class
+          </span>
+        )}
       </div>
     </Grid>
   );

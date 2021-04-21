@@ -4,8 +4,8 @@ import DashboardBulletinBoard from '../../assets/DashboardBulletinBoard'
 
 const BulletinBoardComponent = () => {
     return (
-        <div class="section-container">
-           <div class="section-title">Bulletin Board</div>
+        <div className="section-container">
+           <div className="section-title">Bulletin Board</div>
             <DashboardBulletinBoard/>
         </div>
     )

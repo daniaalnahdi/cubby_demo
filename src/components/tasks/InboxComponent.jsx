@@ -4,8 +4,8 @@ import DashboardInbox from '../../assets/DashboardInbox';
 
 const InboxComponent = () => {
   return (
-    <div class='section-container'>
-      <div class='section-title'>Inbox</div>
+    <div className='section-container'>
+      <div className='section-title'>Inbox</div>
       <DashboardInbox />
     </div>
   );

@@ -183,7 +183,6 @@ header ul li {
 }
 
 .video-student-thumbnail .overlay {
-  z-index: 100;
   transition: 0.5s ease;
   opacity: 0;
   position: absolute;

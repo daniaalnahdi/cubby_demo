@@ -8,7 +8,7 @@ const GradeAllComponent = ({ completeTask }) => {
   const [isGradeSelected, setIsGradeSelected] = useState(false);
 
   return (
-    <div class='section-container'>
+    <div className='section-container'>
       <Grid container direction='row' spacing={3}>
         <Grid item xs={8}>
           Addition and Subtraction

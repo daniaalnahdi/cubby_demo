@@ -23,11 +23,11 @@ const SubmissionRowComponent = (props) => {
           26/28
         </Grid>
         <Grid item xs={2}>
-          <div class='tooltip'>
-            <button class='secondary-btn' onClick={props.toggleIsGrading}>
+          <div className='tooltip'>
+            <button className='secondary-btn' onClick={props.toggleIsGrading}>
               Grade All
             </button>
-            <span class='tooltiptext'>1. Click to view the assignment</span>
+            <span className='tooltiptext'>1. Click to view the assignment</span>
           </div>
         </Grid>
       </Grid>
