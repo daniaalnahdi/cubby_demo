@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Modal from 'react-modal';
+import { Children } from 'react';
 
 const customStyles = {
   content: {
@@ -15,7 +16,7 @@ const customStyles = {
   },
 };
 
-const BriefComponent = ({ title, body, urlPath }) => {
+const BriefComponent = ({ title, urlPath, children }) => {
   return (
     <Modal
       isOpen={true}
@@ -23,7 +24,7 @@ const BriefComponent = ({ title, body, urlPath }) => {
       ariaHideApp={false}
     >
       <h2>{title}</h2>
-      <p>{body}</p>
+      {children}
       <Link to={urlPath}>
         <button>Let's Get Started</button>
       </Link>

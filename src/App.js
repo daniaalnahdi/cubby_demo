@@ -53,25 +53,19 @@ const App = () => {
             <VideoCallFeature />
           </Route>
           <Route path='/tasks'>
-            <BriefComponent
-              title='Tasks Feature'
-              body='This is the tasks demo'
-              urlPath='/tasks/demo'
-            />
+            <BriefComponent title='Tasks Feature' urlPath='/tasks/demo'>
+              This is the tasks demo
+            </BriefComponent>
           </Route>
           <Route path='/grades'>
-            <BriefComponent
-              title='Grades Feature'
-              body='This is the grades demo'
-              urlPath='/grades/demo'
-            />
+            <BriefComponent title='Grades Feature' urlPath='/grades/demo'>
+              This is the grades demo
+            </BriefComponent>
           </Route>
           <Route path='/video'>
-            <BriefComponent
-              title='Video Feature'
-              body='This is the video demo'
-              urlPath='/video/demo'
-            />
+            <BriefComponent title='Video Feature' urlPath='/video/demo'>
+              This is the video demo
+            </BriefComponent>
           </Route>
           <Route path='/'>
             <WelcomeComponent />
