@@ -194,6 +194,14 @@ header ul li {
   border: 3px solid var(--p-color);
 }
 
+.video-student-thumbnail.focus:hover .overlay {
+  opacity: 0 !important;
+}
+
+.video-student-thumbnail.focus:hover img {
+  filter: none !important;
+  opacity: 1 !important;
+}
 
 .video-student-thumbnail.fade img {
   filter: blur(2px);
