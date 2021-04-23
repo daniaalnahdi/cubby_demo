@@ -4,7 +4,7 @@ const DashboardInbox = () => {
   return (
     <svg
       width='100%'
-      height='284'
+      height='85%'
       viewBox='0 0 497 284'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
@@ -37,7 +37,7 @@ const DashboardInbox = () => {
         x2='31'
         y2='210.25'
         stroke='#A0A3BD'
-        stroke-width='0.5'
+        strokeWidth='0.5'
       />
       <rect x='397' y='175' width='100' height='24' rx='10' fill='#00BA88' />
       <path
@@ -68,7 +68,7 @@ const DashboardInbox = () => {
         x2='31'
         y2='136.25'
         stroke='#A0A3BD'
-        stroke-width='0.5'
+        strokeWidth='0.5'
       />
       <rect x='366' y='101' width='131' height='24' rx='10' fill='#ED2E7E' />
       <path
@@ -99,7 +99,7 @@ const DashboardInbox = () => {
         x2='31'
         y2='62.25'
         stroke='#A0A3BD'
-        stroke-width='0.5'
+        strokeWidth='0.5'
       />
       <rect x='397' y='27' width='100' height='24' rx='10' fill='#00BA88' />
       <path

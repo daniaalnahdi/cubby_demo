@@ -6,10 +6,10 @@ import HeaderComponent from '../components/HeaderComponent';
 import SidebarComponent from '../components/SidebarComponent';
 
 //Dashboard Components
-import WeeklyTasksComponent from '../components/dashboard/WeeklyTasksComponent';
-import CalendarComponent from '../components/dashboard/CalendarComponent';
-import BulletinBoardComponent from '../components/dashboard/BulletinBoardComponent';
-import InboxComponent from '../components/dashboard/InboxComponent';
+import WeeklyTasksComponent from '../components/tasks/WeeklyTasksComponent';
+import CalendarComponent from '../components/tasks/CalendarComponent';
+import BulletinBoardComponent from '../components/tasks/BulletinBoardComponent';
+import InboxComponent from '../components/tasks/InboxComponent';
 
 const WeeklyTasksFeature = () => {
   return (

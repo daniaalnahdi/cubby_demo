@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Grid } from '@material-ui/core';
 
+// Popup
+import CompletedPopupComponent from '../components/CompletedPopupComponent';
+
 //Layout Components
 import HeaderComponent from '../components/HeaderComponent';
 import SidebarComponent from '../components/SidebarComponent';
@@ -11,6 +14,7 @@ import GradeAllComponent from '../components/grading/GradeAllComponent';
 
 const GradingFeature = () => {
   const [isGrading, setIsGrading] = useState(false);
+  const [isTaskComplete, setIsTaskComplete] = useState(false);
 
   const toggleIsGrading = () => {
     setIsGrading(!isGrading);
@@ -25,12 +29,15 @@ const GradingFeature = () => {
         </Grid>
         <Grid item xs={11}>
           {isGrading ? (
-            <GradeAllComponent />
+            <GradeAllComponent completeTask={() => setIsTaskComplete(true)} />
           ) : (
             <SubmissionsListComponent toggleIsGrading={toggleIsGrading} />
           )}
         </Grid>
       </Grid>
+      <CompletedPopupComponent isOpen={isTaskComplete}>
+        Completed Grading Task
+      </CompletedPopupComponent>
     </>
   );
 };

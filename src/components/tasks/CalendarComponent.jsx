@@ -6,7 +6,7 @@ const CalendarComponent = () => {
   return (
     <div className='section-container'>
       <DashboardCalendarWeek />
-      <div class='section-title'>Thursday, March 18</div>
+      <div className='section-title'>Thursday, March 18</div>
       <DashboardCalendarSchedule />
     </div>
   );

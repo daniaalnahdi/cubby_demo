@@ -1,18 +1,78 @@
-import React, { useState } from 'react';
-import {Container} from '@material-ui/core'
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Redirect,
+} from 'react-router-dom';
+import { Container } from '@material-ui/core';
 
-import CubbyAppView from './views/CubbyAppView';
-import FeaturesListView from './views/FeaturesListView';
+import WeeklyTasksFeature from './features/WeeklyTasksFeature';
+import GradingFeature from './features/GradingFeature';
+import VideoCallFeature from './features/VideoCallFeature';
 
-import './index.css'
+import WelcomeComponent from './components/WelcomeComponent';
+import BriefComponent from './components/BriefComponent';
+
+import './index.css';
+
+const MainDemoNav = () => {
+  return (
+    <nav>
+      <ul className='features-nav'>
+        <li>
+          <Link to='/tasks'>Weekly Tasks</Link>
+        </li>
+        <li>
+          <Link to='/grades'>Grading</Link>
+        </li>
+        <li>
+          <Link to='/video'>Video</Link>
+        </li>
+      </ul>
+    </nav>
+  );
+};
 
 const App = () => {
-  const [selectedFeature, setSelectedFeature] = useState(1);
-
   return (
     <Container>
-      <FeaturesListView selectFeature={(id) => setSelectedFeature(id)} />
-      <CubbyAppView selectedFeature={selectedFeature} />
+      <Router>
+        <Switch>
+          <Route path='/tasks/demo'>
+            <MainDemoNav />
+            <WeeklyTasksFeature />
+          </Route>
+          <Route path='/grades/demo'>
+            <MainDemoNav />
+            <GradingFeature />
+          </Route>
+          <Route path='/video/demo'>
+            <MainDemoNav />
+            <VideoCallFeature />
+          </Route>
+          <Route path='/tasks'>
+            <BriefComponent title='Tasks Feature' urlPath='/tasks/demo'>
+              This is the tasks demo
+            </BriefComponent>
+          </Route>
+          <Route path='/grades'>
+            <BriefComponent title='Grades Feature' urlPath='/grades/demo'>
+              This is the grades demo
+            </BriefComponent>
+          </Route>
+          <Route path='/video'>
+            <BriefComponent title='Video Feature' urlPath='/video/demo'>
+              This is the video demo
+            </BriefComponent>
+          </Route>
+          <Route path='/'>
+            <WelcomeComponent />
+          </Route>
+          <Redirect to='/' />
+        </Switch>
+      </Router>
     </Container>
   );
 };

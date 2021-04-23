@@ -5,10 +5,10 @@ import SubmissionRowComponent from './SubmissionRowComponent';
 
 const SubmissionsListComponent = (props) => {
   return (
-    <div class='section-container'>
+    <div className='section-container'>
       <Grid container direction='row' spacing={3}>
         <Grid item xs={10}>
-          <div class='section-title'>
+          <div className='section-title'>
             All Submissions
           </div>
         </Grid>
@@ -27,7 +27,6 @@ const SubmissionsListComponent = (props) => {
           Submitted
         </Grid>
       </Grid>
-      {/* TODO: use dummy data and pass in params */}
       <SubmissionRowComponent {...props} />
     </div>
   );

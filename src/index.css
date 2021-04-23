@@ -8,7 +8,7 @@
   border-radius: 30px;
   height: 100%;
   padding: 0.75em 1em;
-margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .section-container-height-auto {
@@ -28,32 +28,42 @@ margin-bottom: 1em;
 }
 
 img {
-    width: 100%;
-  }
+  width: 100%;
+}
+
+.features-nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.features-nav li {
+  margin: 0 1rem;
+}
 
 /* Popup style */
 .popup-box {
-    position: fixed;
-    background: #00000050;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-  }
-   
-  .box {
-    position: relative;
-    width: 70%;
-    margin: 0 auto;
-    height: auto;
-    max-height: 70vh;
-    margin-top: calc(100vh - 85vh - 20px);
-    background: #fff;
-    border-radius: 4px;
-    padding: 20px;
-    border: 1px solid #999;
-    overflow: auto;
-  }
+  position: fixed;
+  background: #00000050;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.box {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  height: auto;
+  max-height: 70vh;
+  margin-top: calc(100vh - 85vh - 20px);
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid #999;
+  overflow: auto;
+}
 
 /* Header */
 header ul {
@@ -64,4 +74,136 @@ header ul {
 
 header ul li {
   margin: 0 1em;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  width: 200px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+
+  /* Position at top*/
+  bottom: 100%;
+  left: 50%;
+  margin-left: -100px; /* Use half of the width to center the tooltip */
+  margin-bottom: 1em;
+}
+
+/* Tooltip */
+.tooltip .tooltiptext::after {
+  content: ' ';
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+/* Weekly Tasks Component */
+.weekly-tasks-days {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  background-color: #d9dbe9;
+  border-radius: 25px;
+  padding: 0;
+}
+
+.weekly-tasks-days li {
+  margin: 0 0.5rem;
+  padding: 0.5em;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.5s ease;
+}
+
+.weekly-tasks-days li:first-child {
+  margin-left: 0 !important;
+}
+
+.weekly-tasks-days li:last-child {
+  margin-right: 0 !important;
+}
+
+.weekly-tasks-days li.selected {
+  background-color: white;
+}
+
+.weekly-tasks-thumbnails {
+  min-height: 180px;
+}
+
+/* Video Call */
+.video-student-thumbnail {
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: #a0a3bd;
+}
+.video-student-thumbnail img {
+  border-radius: 25px;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.video-student-thumbnail .overlay {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+}
+
+.video-student-thumbnail .overlay-content {
+  top: -50%;
+  left: -50%;
+  transform: translate(0%, -150%);
+  -ms-transform: translate(0%, -150%);
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.video-student-thumbnail:hover img {
+  filter: blur(2px);
+  opacity: 0.5;
+}
+
+.video-student-thumbnail:hover .overlay {
+  opacity: 1;
+}
+
+.video-student-thumbnail.focus {
+  border: 3px solid var(--p-color);
+}
+
+.video-student-thumbnail.focus:hover .overlay {
+  opacity: 0 !important;
+}
+
+.video-student-thumbnail.focus:hover img {
+  filter: none !important;
+  opacity: 1 !important;
+}
+
+.video-student-thumbnail.fade img {
+  filter: blur(2px);
+  opacity: 0.5;
 }

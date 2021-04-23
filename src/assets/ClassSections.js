@@ -39,8 +39,8 @@ const ClassSections = () => {
           y2='37.7769'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#7433FF' />
-          <stop offset='1' stop-color='#FFA3FD' />
+          <stop stopColor='#7433FF' />
+          <stop offset='1' stopColor='#FFA3FD' />
         </linearGradient>
         <linearGradient
           id='paint1_linear'
@@ -50,8 +50,8 @@ const ClassSections = () => {
           y2='119.777'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#624AF2' />
-          <stop offset='1' stop-color='#50DDC3' />
+          <stop stopColor='#624AF2' />
+          <stop offset='1' stopColor='#50DDC3' />
         </linearGradient>
         <linearGradient
           id='paint2_linear'
@@ -61,8 +61,8 @@ const ClassSections = () => {
           y2='201.777'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#EB0055' />
-          <stop offset='1' stop-color='#FFFA80' />
+          <stop stopColor='#EB0055' />
+          <stop offset='1' stopColor='#FFFA80' />
         </linearGradient>
       </defs>
     </svg>
