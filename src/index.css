@@ -20,11 +20,17 @@
 }
 
 .secondary-btn {
+  color: #fff;
   border: 2px solid var(--p-color);
+  background: var(--p-color);
   box-sizing: border-box;
   border-radius: 40px;
   font-size: 14px;
   padding: 1em;
+}
+.secondary-btn:hover {
+  color: var(--p-color);
+  background: #fff;
 }
 
 img {
@@ -33,12 +39,25 @@ img {
 
 .features-nav {
   display: flex;
+  margin-bottom: 20px;
+  margin-left: 30%;
   flex-direction: row;
   list-style: none;
 }
 
 .features-nav li {
   margin: 0 1rem;
+}
+
+.features-nav li button {
+  color: #682cda;
+  border: 2px solid var(--p-color);
+  border-radius: 40px;
+}
+
+.features-nav li button:hover {
+  color: #fff;
+  background: var(--p-color);
 }
 
 /* Popup style */
@@ -103,7 +122,7 @@ header ul li {
 
 /* Tooltip */
 .tooltip .tooltiptext::after {
-  content: ' ';
+  content: " ";
   position: absolute;
   top: 100%; /* At the bottom of the tooltip */
   left: 50%;

@@ -22,13 +22,19 @@ const MainDemoNav = () => {
     <nav>
       <ul className='features-nav'>
         <li>
-          <Link to='/tasks'>Weekly Tasks</Link>
+          <Link to='/tasks'>
+            <button>Weekly Tasks</button>
+            </Link>
         </li>
         <li>
-          <Link to='/grades'>Grading</Link>
+          <Link to='/grades'>
+            <button>Grading</button>
+            </Link>
         </li>
         <li>
-          <Link to='/video'>Video</Link>
+          <Link to='/video'>
+            <button>Video</button>
+            </Link>
         </li>
       </ul>
     </nav>

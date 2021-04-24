@@ -42,7 +42,9 @@ const VideoCallView = () => {
         <Grid item xs={2}>
           {hasClickedPullAside && !returnedToClass && (
             <div className='tooltip'>
-              <button onClick={() => setReturnedToClass(true)}>
+              <button
+                className='secondary-btn'
+                onClick={() => setReturnedToClass(true)}>
                 Return to Class
               </button>
               <span className='tooltiptext'>
@@ -52,7 +54,10 @@ const VideoCallView = () => {
             </div>
           )}
           {(!hasClickedPullAside || !!returnedToClass) && (
-            <button onClick={() => setReturnedToClass(true)}>End Call</button>
+            <button
+              className='secondary-btn'
+              onClick={() => setReturnedToClass(true)}>
+              End Call</button>
           )}
         </Grid>
       </Grid>

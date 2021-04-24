@@ -20,7 +20,9 @@ const VideoCallStudentThumbnail = ({
           <div className='overlay-content'>
             {pulledAside === 0 && (
               <>
-                <button onClick={() => updatePullAside(idx)}>Pull Aside</button>
+                <button
+                  className='secondary-btn'
+                  onClick={() => updatePullAside(idx)}>Pull Aside</button>
                 <VideoStudentOptions />
               </>
             )}

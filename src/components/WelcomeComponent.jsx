@@ -25,13 +25,13 @@ const WelcomeComponent = () => {
       <h2>Welcome to Cubby Demo</h2>
       <p>Select from the features above</p>
       <Link to='/tasks'>
-        <button>Add a Task</button>
+        <button className='secondary-btn'>Add a Tasks</button>
       </Link>
       <Link to='/grades'>
-        <button>Grades</button>
+        <button className='secondary-btn'>Grades</button>
       </Link>
       <Link to='/video'>
-        <button>Video </button>
+        <button className='secondary-btn'>Video </button>
       </Link>
     </Modal>
   );

@@ -2,8 +2,8 @@ import React from 'react';
 import { Grid } from '@material-ui/core';
 
 //Videocall Components
-import VideoCallInfoComponent from '../components/videocall/VideoCallInfoComponent';
-import VideoCallView from '../components/videocall/VideoCallViewComponent';
+import VideoCallInfoComponent from '../components/videocall/VideocallInfoComponent';
+import VideoCallView from '../components/videocall/VideocallViewComponent';
 
 const VideoCallFeature = () => {
   return (

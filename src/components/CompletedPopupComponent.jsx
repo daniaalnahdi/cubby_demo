@@ -28,7 +28,10 @@ const CompletedPopupComponent = ({ children, isOpen }) => {
     >
       <h2>Task Completed!</h2>
       {children}
-      <button onClick={() => window.location.reload()}>Re-do task</button>
+      <button
+        className='secondary-btn'
+        onClick={() => window.location.reload()}>
+        Re-do task</button>
     </Modal>
   );
 };

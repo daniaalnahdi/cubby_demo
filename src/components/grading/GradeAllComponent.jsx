@@ -46,7 +46,10 @@ const GradeAllComponent = ({ completeTask }) => {
             )}
           </div>
           <div className='tooltip'>
-            <button onClick={completeTask}>Save Button</button>
+            <button
+              className='secondary-btn'
+              onClick={completeTask}>
+              Save Button</button>
             {isFeedbackWritten && (
               <span className='tooltiptext'>4. Save Changes</span>
             )}

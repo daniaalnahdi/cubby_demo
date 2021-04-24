@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Grid } from '@material-ui/core';
+import { colors, Grid } from '@material-ui/core';
 import Modal from 'react-modal';
 
 import WeeklyTasksThumbnails from '../../assets/WeeklyTasksThumbnails';
@@ -19,6 +19,7 @@ const WeeklyTasksComponent = () => {
     setSelectedDay(e.target.innerHTML);
     setHasSelectedDay(true);
   };
+
 
   return (
     <div className='section-container section-container-height-auto '>
@@ -51,7 +52,7 @@ const WeeklyTasksComponent = () => {
         <Grid item xs={3}>
           <div className='tooltip'>
             <button
-              className='primary-btn'
+              className='secondary-btn'
               onClick={() => setHasClickedNew(true)}
             >
               Add New
@@ -91,7 +92,7 @@ const WeeklyTasksComponent = () => {
         </div>
         <div className='tooltip'>
           <button
-            className='primary-btn'
+            className='secondary-btn'
             onClick={() => setIsTaskComplete(true)}
           >
             Publish

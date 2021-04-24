@@ -26,7 +26,7 @@ const BriefComponent = ({ title, urlPath, children }) => {
       <h2>{title}</h2>
       {children}
       <Link to={urlPath}>
-        <button>Let's Get Started</button>
+        <button className='secondary-btn'>Let's Get Started</button>
       </Link>
     </Modal>
   );
