@@ -13,18 +13,18 @@ const SubmissionsListComponent = (props) => {
           </div>
         </Grid>
         <Grid item xs={2}>
-          Sort By
+          <div className="textfont">Sort By</div>
         </Grid>
       </Grid>
       <Grid container direction='row' spacing={3}>
         <Grid item xs={5}>
-          Title
+          <div className="textfont">Title</div>
         </Grid>
         <Grid item xs={3}>
-          Assigned
+          <div className="textfont">Assigned</div>
         </Grid>
         <Grid item xs={4}>
-          Submitted
+          <div className="textfont">Submitted</div>
         </Grid>
       </Grid>
       <SubmissionRowComponent {...props} />

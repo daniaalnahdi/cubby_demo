@@ -16,10 +16,10 @@ const HeaderComponent = () => {
         </Grid>
         <Grid item xs={8}>
           <ul>
-            <li>Dashboard</li>
-            <li>Feedback</li>
-            <li>Directory</li>
-            <li>Inbox</li>
+            <li className='titlefont'>Dashboard</li>
+            <li className='titlefont'>Feedback</li>
+            <li className='titlefont'>Directory</li>
+            <li className='titlefont'>Inbox</li>
           </ul>
         </Grid>
       </Grid>

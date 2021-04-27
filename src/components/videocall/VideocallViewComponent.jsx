@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Grid } from '@material-ui/core';
+import { Link, useLocation } from 'react-router-dom';
+
 
 import VideoCallButtons from '../../assets/VideoCallButtons';
 import VideoCallStudentGallery from './VideoCallStudentGallery';
@@ -66,7 +68,21 @@ const VideoCallView = () => {
         </Grid>
       </Grid>
       <CompletedPopupComponent isOpen={isTaskComplete}>
-        <p>You started a video call!</p>
+        <p className='textfont'>You started a video call!</p>
+        <div className='copy-buttons'>
+          <button
+            className='secondary-btn'
+            onClick={() => window.location.reload()}
+          >
+            Re-do task
+          </button>
+          <Link to='/tasks'>
+            <button
+            className='secondary-btn'
+          >
+            next task</button>
+          </Link>
+        </div>
       </CompletedPopupComponent>
     </div>
   );

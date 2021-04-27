@@ -1,8 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap");
 :root {
   --p-color: #682cda;
   --bg-color: #f7f7fc;
 }
-
+.titlefont {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+}
+.textfont {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+}
 .section-container {
   background-color: var(--bg-color);
   border-radius: 30px;
@@ -16,10 +24,14 @@
 }
 
 .section-title {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
   font-size: 24px;
 }
 
 .secondary-btn {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
   color: #fff;
   border: 2px solid var(--p-color);
   background: var(--p-color);
@@ -103,12 +115,16 @@ header ul li {
 
 /* Tooltip text */
 .tooltip .tooltiptext {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
   width: 200px;
   background-color: black;
+  opacity: 60%;
   color: #fff;
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
+  transition: 5s;
 
   /* Position the tooltip text - see examples below! */
   position: absolute;
@@ -122,7 +138,7 @@ header ul li {
 
 /* Tooltip */
 .tooltip .tooltiptext::after {
-  content: ' ';
+  content: " ";
   position: absolute;
   top: 100%; /* At the bottom of the tooltip */
   left: 50%;
@@ -143,6 +159,8 @@ header ul li {
 }
 
 .weekly-tasks-days li {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
   margin: 0 0.5rem;
   padding: 0.5em;
   cursor: pointer;
@@ -164,6 +182,11 @@ header ul li {
 
 .weekly-tasks-thumbnails {
   min-height: 180px;
+}
+
+.form {
+  float: left;
+  display: inline-block;
 }
 
 /* Video Call */

@@ -23,17 +23,17 @@ const MainDemoNav = () => {
       <ul className='features-nav'>
         <li>
           <Link to='/tasks'>
-            <button>Weekly Tasks</button>
+            <button className='titlefont'>Weekly Tasks</button>
             </Link>
         </li>
         <li>
           <Link to='/grades'>
-            <button>Grading</button>
+            <button className='titlefont'>Grading</button>
             </Link>
         </li>
         <li>
           <Link to='/video'>
-            <button>Video</button>
+            <button className='titlefont'>Video</button>
             </Link>
         </li>
       </ul>
@@ -60,17 +60,17 @@ const App = () => {
           </Route>
           <Route path='/tasks'>
             <BriefComponent title='Tasks Feature' urlPath='/tasks/demo'>
-             <p>We will now add a task for a student.</p> 
+             <p className='textfont'>We will now add a task for a student.</p> 
             </BriefComponent>
           </Route>
           <Route path='/grades'>
             <BriefComponent title='Grades Feature' urlPath='/grades/demo'>
-              <p>We will now enter student grades.</p>
+              <p className='textfont'>We will now enter student grades.</p>
             </BriefComponent>
           </Route>
           <Route path='/video'>
             <BriefComponent title='Video Feature' urlPath='/video/demo'>
-              <p>We will now start a video call conference.</p>
+              <p className='textfont'>We will now start a video call conference.</p>
             </BriefComponent>
           </Route>
           <Route path='/'>

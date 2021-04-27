@@ -1,6 +1,7 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Modal from 'react-modal';
+import WelcomeComponent from './WelcomeComponent';
 
 //Popup Style
 const customStyles = {
@@ -28,16 +29,8 @@ const CompletedPopupComponent = ({ children, isOpen }) => {
     >
       <div className='copy-container'>
         <div className='copy-body'>
-          <h2>Task Completed!</h2>
+          <h2 className='titlefont'>Task Completed!</h2>
           {children}
-        </div>
-        <div className='copy-buttons'>
-          <button
-            className='secondary-btn'
-            onClick={() => window.location.reload()}
-          >
-            Re-do task
-          </button>
         </div>
       </div>
     </Modal>

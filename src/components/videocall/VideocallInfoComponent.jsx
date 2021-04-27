@@ -11,8 +11,8 @@ const VideoCallInfoComponent = () => {
           <span style={{ fontSize: '4em' }}>🎨</span>
         </Grid>
         <Grid item xs={7}>
-          <h2>Art Class</h2>
-          <div>12:00 PM - 1:00 PM</div>
+          <h2 className='titlefont'> Class</h2>
+          <div className='titlefont'>12:00 PM - 1:00 PM</div>
         </Grid>
         <Grid item xs={4}>
           <VideoCallSettings />

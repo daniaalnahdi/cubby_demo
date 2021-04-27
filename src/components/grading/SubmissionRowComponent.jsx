@@ -8,19 +8,17 @@ const SubmissionRowComponent = (props) => {
       <Grid container direction='row' spacing={3} alignItems='center'>
         <Grid item xs={3}>
           <div>
-            <span>📝</span>
-            Assignment Name
+            <span><div className="textfont">📝Assignment Name</div></span>
           </div>
-          <div>Subtitle</div>
         </Grid>
         <Grid item xs={2}>
-          Audio
+          <div className="textfont">Audio</div>
         </Grid>
         <Grid item xs={3}>
-          Feb 22.
+          <div className="textfont">Feb 22.</div>
         </Grid>
         <Grid item xs={2}>
-          26/28
+          <div className="textfont">26/28</div>
         </Grid>
         <Grid item xs={2}>
           <div className='tooltip'>

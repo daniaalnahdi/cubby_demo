@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { colors, Grid } from '@material-ui/core';
 import Modal from 'react-modal';
+import { Link, useLocation } from 'react-router-dom';
+
 
 import WeeklyTasksThumbnails from '../../assets/WeeklyTasksThumbnails';
 import GenericPopupComponent from '../GenericPopupComponent';
@@ -70,6 +72,7 @@ const WeeklyTasksComponent = () => {
         isOpen={hasClickedNew && !isTaskComplete}
         onRequestClose={() => setIsTaskComplete(true)}
       >
+        <div className="form">
         <div className='tooltip' style={{ marginTop: '2em' }}>
           <input
             type='text'
@@ -95,15 +98,30 @@ const WeeklyTasksComponent = () => {
             className='secondary-btn'
             onClick={() => setIsTaskComplete(true)}
           >
-            Publish
+              Publish
           </button>
+          </div>
+          </div>
           {hasAddedTitle && hasAddedDesc && (
             <span className='tooltiptext'>4. Publish task</span>
           )}{' '}
-        </div>
       </GenericPopupComponent>
       <CompletedPopupComponent isOpen={isTaskComplete}>
-        <p>You added a weekly task!</p>
+        <p className='textfont'>You added a weekly task!</p>
+        <div className='copy-buttons'>
+          <button
+            className='secondary-btn'
+            onClick={() => window.location.reload()}
+          >
+            Re-do task
+          </button>
+          <Link to='/grades'>
+            <button
+            className='secondary-btn'
+          >
+            next task</button>
+          </Link>
+        </div>
       </CompletedPopupComponent>
     </div>
   );

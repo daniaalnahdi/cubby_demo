@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Grid } from '@material-ui/core';
+import { Link, useLocation } from 'react-router-dom';
+
 
 // Popup
 import CompletedPopupComponent from '../components/CompletedPopupComponent';
@@ -36,7 +38,21 @@ const GradingFeature = () => {
         </Grid>
       </Grid>
       <CompletedPopupComponent isOpen={isTaskComplete}>
-        <p>You added a grade!</p>
+        <p className='textfont'>You added a grade!</p>
+        <div className='copy-buttons'>
+          <button
+            className='secondary-btn'
+            onClick={() => window.location.reload()}
+          >
+            Re-do task
+          </button>
+          <Link to='/video'>
+            <button
+            className='secondary-btn'
+          >
+            next task</button>
+          </Link>
+        </div>
       </CompletedPopupComponent>
     </>
   );

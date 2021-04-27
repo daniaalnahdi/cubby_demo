@@ -21,14 +21,14 @@ const WelcomeComponent = () => {
     <Modal isOpen={true} style={customStyles} ariaHideApp={false}>
       <div className='copy-container welcome-screen'>
         <div className='copy-body'>
-          <h1>Welcome to Cubby's Online Demo!</h1>
-          <p>
+          <h1 className='titlefont'>Welcome to Cubby's Online Demo!</h1>
+          <p className='textfont'>
             Cubby is an interactive learning management system that targets
             young students (ages 5-7) in remote and hybrid classrooms. Our
             primary goals were to foster social-emotional learning and
             facilitate parent-teacher relationships.
           </p>
-          <p>Click on a feature below to test it out!</p>
+          <p className='textfont'>Click on a feature below to test it out!</p>
         </div>
         <div className='copy-buttons'>
           <Link to='/tasks'>

@@ -19,7 +19,6 @@ const GradeAllComponent = ({ completeTask }) => {
     <div className='section-container'>
       <Grid container direction='row' spacing={3}>
         <Grid item xs={8}>
-          Addition and Subtraction
           <img src={MathHomework} />
         </Grid>
         <Grid item xs={4}>
