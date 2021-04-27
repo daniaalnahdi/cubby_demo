@@ -122,7 +122,7 @@ header ul li {
 
 /* Tooltip */
 .tooltip .tooltiptext::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   top: 100%; /* At the bottom of the tooltip */
   left: 50%;
@@ -225,4 +225,27 @@ header ul li {
 .video-student-thumbnail.fade img {
   filter: blur(2px);
   opacity: 0.5;
+}
+
+/* Demo UI */
+.copy-container {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+
+.copy-body {
+  flex-grow: 3;
+}
+
+.copy-body p {
+  font-size: 1.35rem;
+}
+
+.copy-buttons {
+  flex-grow: 1;
+}
+
+.welcome-screen p {
+  font-size: 1.5rem;
 }

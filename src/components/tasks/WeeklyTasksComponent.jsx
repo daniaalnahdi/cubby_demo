@@ -103,7 +103,7 @@ const WeeklyTasksComponent = () => {
         </div>
       </GenericPopupComponent>
       <CompletedPopupComponent isOpen={isTaskComplete}>
-        Completed Adding Task
+        <p>You added a weekly task!</p>
       </CompletedPopupComponent>
     </div>
   );

@@ -36,15 +36,17 @@ const VideoCallView = () => {
       </div>
       <Grid container spacing={2}>
         <Grid item xs={10}>
-          {/* TODO: re-export without end call button */}
-          <VideoCallButtons />
+          <div style={{ marginTop: '1.5em' }}>
+            <VideoCallButtons />
+          </div>
         </Grid>
         <Grid item xs={2}>
           {hasClickedPullAside && !returnedToClass && (
             <div className='tooltip'>
               <button
                 className='secondary-btn'
-                onClick={() => setReturnedToClass(true)}>
+                onClick={() => setReturnedToClass(true)}
+              >
                 Return to Class
               </button>
               <span className='tooltiptext'>
@@ -56,13 +58,15 @@ const VideoCallView = () => {
           {(!hasClickedPullAside || !!returnedToClass) && (
             <button
               className='secondary-btn'
-              onClick={() => setReturnedToClass(true)}>
-              End Call</button>
+              onClick={() => setReturnedToClass(true)}
+            >
+              End Call
+            </button>
           )}
         </Grid>
       </Grid>
       <CompletedPopupComponent isOpen={isTaskComplete}>
-        Completed Video Task
+        <p>You started a video call!</p>
       </CompletedPopupComponent>
     </div>
   );

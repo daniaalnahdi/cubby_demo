@@ -60,17 +60,17 @@ const App = () => {
           </Route>
           <Route path='/tasks'>
             <BriefComponent title='Tasks Feature' urlPath='/tasks/demo'>
-              This is the tasks demo
+             <p>We will now add a task for a student.</p> 
             </BriefComponent>
           </Route>
           <Route path='/grades'>
             <BriefComponent title='Grades Feature' urlPath='/grades/demo'>
-              This is the grades demo
+              <p>We will now enter student grades.</p>
             </BriefComponent>
           </Route>
           <Route path='/video'>
             <BriefComponent title='Video Feature' urlPath='/video/demo'>
-              This is the video demo
+              <p>We will now start a video call conference.</p>
             </BriefComponent>
           </Route>
           <Route path='/'>
