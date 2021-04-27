@@ -36,7 +36,7 @@ const VideoCallView = () => {
       </div>
       <Grid container spacing={2}>
         <Grid item xs={10}>
-          <div style={{marginTop: '1.5em'}}>
+          <div style={{ marginTop: '1.5em' }}>
             <VideoCallButtons />
           </div>
         </Grid>
@@ -66,7 +66,7 @@ const VideoCallView = () => {
         </Grid>
       </Grid>
       <CompletedPopupComponent isOpen={isTaskComplete}>
-        Completed Video Task
+        <p>You started a video call!</p>
       </CompletedPopupComponent>
     </div>
   );

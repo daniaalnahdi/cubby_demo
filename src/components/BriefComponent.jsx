@@ -18,16 +18,18 @@ const customStyles = {
 
 const BriefComponent = ({ title, urlPath, children }) => {
   return (
-    <Modal
-      isOpen={true}
-      style={customStyles}
-      ariaHideApp={false}
-    >
-      <h2>{title}</h2>
-      {children}
-      <Link to={urlPath}>
-        <button className='secondary-btn'>Let's Get Started</button>
-      </Link>
+    <Modal isOpen={true} style={customStyles} ariaHideApp={false}>
+      <div className='copy-container'>
+        <div className='copy-body'>
+          <h2>{title}</h2>
+          {children}
+        </div>
+        <div className='copy-buttons'>
+          <Link to={urlPath}>
+            <button className='secondary-btn'>Let's Get Started</button>
+          </Link>
+        </div>
+      </div>
     </Modal>
   );
 };

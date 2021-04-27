@@ -26,12 +26,20 @@ const CompletedPopupComponent = ({ children, isOpen }) => {
       style={customStyles}
       ariaHideApp={false}
     >
-      <h2>Task Completed!</h2>
-      {children}
-      <button
-        className='secondary-btn'
-        onClick={() => window.location.reload()}>
-        Re-do task</button>
+      <div className='copy-container'>
+        <div className='copy-body'>
+          <h2>Task Completed!</h2>
+          {children}
+        </div>
+        <div className='copy-buttons'>
+          <button
+            className='secondary-btn'
+            onClick={() => window.location.reload()}
+          >
+            Re-do task
+          </button>
+        </div>
+      </div>
     </Modal>
   );
 };

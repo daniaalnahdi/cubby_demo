@@ -36,7 +36,7 @@ const GradingFeature = () => {
         </Grid>
       </Grid>
       <CompletedPopupComponent isOpen={isTaskComplete}>
-        Completed Grading Task
+        <p>You added a grade!</p>
       </CompletedPopupComponent>
     </>
   );
