@@ -1,14 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap');
 :root {
   --p-color: #682cda;
   --bg-color: #f7f7fc;
 }
+
+/* TODO: remove this and update others with Bozon*/
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
 .titlefont {
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-weight: 800;
 }
 .textfont {
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-weight: 400;
 }
 .section-container {
@@ -24,13 +30,13 @@
 }
 
 .section-title {
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-weight: 600;
   font-size: 24px;
 }
 
 .secondary-btn {
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-weight: 600;
   color: #fff;
   border: 2px solid var(--p-color);
@@ -115,7 +121,7 @@ header ul li {
 
 /* Tooltip text */
 .tooltip .tooltiptext {
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-weight: 400;
   width: 200px;
   background-color: black;
@@ -138,7 +144,7 @@ header ul li {
 
 /* Tooltip */
 .tooltip .tooltiptext::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   top: 100%; /* At the bottom of the tooltip */
   left: 50%;
@@ -159,7 +165,7 @@ header ul li {
 }
 
 .weekly-tasks-days li {
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-weight: 400;
   margin: 0 0.5rem;
   padding: 0.5em;
