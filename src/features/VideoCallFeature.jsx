@@ -3,7 +3,7 @@ import { Grid } from '@material-ui/core';
 
 //Videocall Components
 import VideoCallInfoComponent from '../components/videocall/VideoCallInfoComponent';
-import VideoCallView from '../components/videocall/VideocallViewComponent';
+import VideoCallView from '../components/videocall/VideoCallViewComponent';
 
 const VideoCallFeature = () => {
   return (
