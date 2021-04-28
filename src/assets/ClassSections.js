@@ -3,7 +3,7 @@ import React from 'react';
 const ClassSections = () => {
   return (
     <svg
-      width='100%'
+      width='60'
       height='300'
       viewBox='0 0 70 310'
       fill='none'

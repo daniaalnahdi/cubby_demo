@@ -7,7 +7,10 @@ import GradingSubmissionsHeader from '../../assets/GradingSubmissionsHeader';
 
 const SubmissionsListComponent = (props) => {
   return (
-    <div className='section-container'>
+    <div
+      className='section-container'
+      style={{ paddingLeft: '2em', paddingRight: '2em' }}
+    >
       <GradingSubmissionsHeader />
       <Grid container direction='row' spacing={3}>
         <Grid item xs={5}>
@@ -20,6 +23,7 @@ const SubmissionsListComponent = (props) => {
           <div className='textfont'>Submitted</div>
         </Grid>
       </Grid>
+      <hr style={{ borderTop: '2px solid #A0A3BD' }} />
       <SubmissionRowComponent
         {...props}
         emoji='🔢'
@@ -29,6 +33,7 @@ const SubmissionsListComponent = (props) => {
         submitted='26'
         tooltip={true}
       />
+      <hr style={{ borderTop: '1px solid #D9DBE9' }} />
       <SubmissionRowComponent
         {...props}
         emoji='🐟'
@@ -38,6 +43,7 @@ const SubmissionsListComponent = (props) => {
         submitted='27'
         tooltip={false}
       />
+      <hr style={{ borderTop: '1px solid #D9DBE9' }} />
       <SubmissionRowComponent
         {...props}
         emoji='🧸'

@@ -50,11 +50,37 @@ body {
 }
 .secondary-btn:hover {
   color: var(--p-color);
+  background: inherit;
+}
+
+.secondary-btn.small-btn {
+  padding: 0.6em;
+  width: 125px;
+}
+
+.secondary-btn.white-btn {
   background: #fff;
+  color: rgb(3, 2, 2);
+  border: 2px solid #fff;
+}
+
+.secondary-btn.red-btn {
+  background: #ed2e7e;
+  border: 2px solid #ed2e7e;
+}
+
+.secondary-btn.orange-btn {
+  background: #f4b740;
+  border: 2px solid #f4b740;
+}
+
+.red-btn,
+.orange-btn:hover {
+  color: #fff !important;
 }
 
 .secondary-btn.inverted-btn {
-  background: #fff;
+  background: inherit;
   border: 2px solid var(--p-color);
   color: var(--p-color);
 }
@@ -76,8 +102,8 @@ img {
   margin-top: -15px;
   background: linear-gradient(
     114.44deg,
-    rgb(131, 78, 233, 0.3) 0%,
-    rgb(98, 89, 236, 0.3) 100%
+    rgb(131, 78, 233, 0.2) 0%,
+    rgb(98, 89, 236, 0.2) 100%
   );
   padding: 0.75em;
   margin-bottom: 1em;
@@ -220,19 +246,19 @@ textarea {
   font-family: 'Manrope', sans-serif;
   font-size: 15px;
   font-weight: 600;
-  margin: 0 0.5rem;
-  padding: 0.5em;
+  margin: 0.2em 0.5rem;
+  padding: 0.5em 0.75em;
   cursor: pointer;
   border-radius: 25px;
   transition: all 0.5s ease;
 }
 
 .weekly-tasks-days li:first-child {
-  margin-left: 0 !important;
+  margin-left: 0.1em !important;
 }
 
 .weekly-tasks-days li:last-child {
-  margin-right: 0 !important;
+  margin-right: 0.1em !important;
 }
 
 .weekly-tasks-days li.selected {

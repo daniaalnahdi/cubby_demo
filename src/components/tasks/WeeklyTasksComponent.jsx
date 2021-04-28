@@ -54,8 +54,9 @@ const WeeklyTasksComponent = () => {
         <Grid item xs={3}>
           <div className='tooltip'>
             <button
-              className='secondary-btn'
+              className='secondary-btn small-btn'
               onClick={() => setHasClickedNew(true)}
+              style={{marginTop: '15px'}}
             >
               Add New
             </button>
