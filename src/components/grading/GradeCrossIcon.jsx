@@ -3,9 +3,9 @@ import React from 'react';
 const GradeCrossIcon = ({ isSelected, updateSelectedGrade }) => {
   return (
     <svg
-      width='43'
-      height='43'
-      viewBox='0 0 36 36'
+      width='35'
+      height='35'
+      viewBox='-2 -2 40 40'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
       onClick={updateSelectedGrade}
