@@ -7,7 +7,7 @@ import VideoCallView from '../components/videocall/VideoCallViewComponent';
 
 const VideoCallFeature = () => {
   return (
-    <>
+    <div className='cubby-ui'>
       <Grid container direction='row' spacing={3} alignContent='center'>
         <Grid item xs={12}>
           <VideoCallInfoComponent />
@@ -17,7 +17,7 @@ const VideoCallFeature = () => {
           <VideoCallView />
         </Grid>
       </Grid>
-    </>
+    </div>
   );
 };
 

@@ -13,7 +13,7 @@ import InboxComponent from '../components/tasks/InboxComponent';
 
 const WeeklyTasksFeature = () => {
   return (
-    <>
+    <div className='cubby-ui'>
       <HeaderComponent />
       <Grid container direction='row' spacing={2}>
         <Grid item xs={1}>
@@ -34,7 +34,7 @@ const WeeklyTasksFeature = () => {
           <CalendarComponent />
         </Grid>
       </Grid>
-    </>
+    </div>
   );
 };
 
