@@ -166,7 +166,8 @@ header ul li {
 
 .weekly-tasks-days li {
   font-family: 'Manrope', sans-serif;
-  font-weight: 400;
+  /* font-size: 15px;
+  font-weight: 600; */
   margin: 0 0.5rem;
   padding: 0.5em;
   cursor: pointer;
@@ -191,7 +192,6 @@ header ul li {
 }
 
 .form {
-  float: left;
   display: inline-block;
 }
 

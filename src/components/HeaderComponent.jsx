@@ -3,24 +3,20 @@ import { Grid } from '@material-ui/core';
 
 import Menu from '../assets/Menu';
 import Logo from '../assets/Logo';
+import Navbar from '../assets/Navbar';
 
 const HeaderComponent = () => {
   return (
     <header>
       <Grid container direction='row' spacing={3}>
-        <Grid item xs={2}>
+        <Grid item xs={1}>
           <Menu />
         </Grid>
         <Grid item xs={2}>
           <Logo />
         </Grid>
         <Grid item xs={8}>
-          <ul>
-            <li className='titlefont'>Dashboard</li>
-            <li className='titlefont'>Feedback</li>
-            <li className='titlefont'>Directory</li>
-            <li className='titlefont'>Inbox</li>
-          </ul>
+          <Navbar />
         </Grid>
       </Grid>
     </header>
