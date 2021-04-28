@@ -3,7 +3,7 @@ import React from 'react';
 const GradingNoteToSelf = () => {
   return (
     <svg
-      width='150'
+      width='120'
       height='36'
       viewBox='0 0 150 36'
       fill='none'

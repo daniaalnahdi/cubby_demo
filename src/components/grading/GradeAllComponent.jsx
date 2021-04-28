@@ -22,7 +22,9 @@ const GradeAllComponent = ({ completeTask }) => {
       className='section-container'
       style={{ paddingLeft: '2em', paddingRight: '2em' }}
     >
-      <GradingBreadcrumbs />
+      <div style={{ marginBottom: '1em' }}>
+        <GradingBreadcrumbs />
+      </div>
       <Grid container direction='row' spacing={3}>
         <Grid item xs={8}>
           <img src={MathHomework} />
@@ -44,14 +46,17 @@ const GradeAllComponent = ({ completeTask }) => {
               )}
             </div>
           </div>
-          <div className='tooltip textarea'>
-            <textarea
-              placeholder='Send comment to family'
-              onChange={() => setIsFeedbackWritten(true)}
-            />
-            {isGradeSelected && !isFeedbackWritten && (
-              <span className='tooltiptext'>3. Write some feedback</span>
-            )}
+          <div style={{ marginRight: '1em', marginTop: '1em' }}>
+            <div className='tooltip textarea'>
+              <textarea
+                className='white-textarea'
+                placeholder='Send comment to family'
+                onChange={() => setIsFeedbackWritten(true)}
+              />
+              {isGradeSelected && !isFeedbackWritten && (
+                <span className='tooltiptext'>3. Write some feedback</span>
+              )}
+            </div>
           </div>
           <GradingNoteToSelf />
           <div className='btns-grading-container'>

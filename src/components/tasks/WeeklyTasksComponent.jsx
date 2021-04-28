@@ -56,7 +56,7 @@ const WeeklyTasksComponent = () => {
             <button
               className='secondary-btn small-btn'
               onClick={() => setHasClickedNew(true)}
-              style={{marginTop: '15px'}}
+              style={{ marginTop: '15px' }}
             >
               Add New
             </button>
@@ -67,7 +67,11 @@ const WeeklyTasksComponent = () => {
         </Grid>
       </Grid>
       <div className='weekly-tasks-thumbnails'>
-        {selectedDay === 'Monday' && <WeeklyTasksThumbnails />}
+        {selectedDay === 'Monday' ? (
+          <WeeklyTasksThumbnails />
+        ) : (
+          <div className='no-tasks'>Add a task for this day!</div>
+        )}
       </div>
       <GenericPopupComponent
         isOpen={hasClickedNew && !isTaskComplete}
