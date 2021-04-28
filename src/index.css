@@ -50,17 +50,16 @@ body {
 }
 .secondary-btn:hover {
   color: var(--p-color);
-  background: #fff;
+  background: inherit;
 }
 
 .secondary-btn.small-btn {
   padding: .6em;
   width: 125px;
-  margin-top: 5px;
 }
 
 .secondary-btn.inverted-btn {
-  background: #fff;
+  background: inherit;
   border: 2px solid var(--p-color);
   color: var(--p-color);
 }

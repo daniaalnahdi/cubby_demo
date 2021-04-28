@@ -3,8 +3,8 @@ import React from 'react';
 const ClassSections = () => {
   return (
     <svg
-      width='70%'
-      height='50%'
+      width='60'
+      height='300'
       viewBox='0 0 70 310'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
