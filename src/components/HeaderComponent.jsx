@@ -10,7 +10,7 @@ const HeaderComponent = () => {
   const currentURL = useLocation().pathname;
 
   return (
-    <header>
+    <header style={{marginBottom: '1em'}}>
       <Grid container direction='row' spacing={3} alignItems='center'>
         <Grid item xs={1}>
           <Menu />

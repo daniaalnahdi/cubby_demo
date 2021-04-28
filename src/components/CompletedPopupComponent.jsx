@@ -15,12 +15,11 @@ const customStyles = {
     borderRadius: '25px',
   },
   overlay: {
-    background: 'linear-gradient(114.44deg,  rgb(131, 78, 233, 0.3) 0%, rgb(98, 89, 236, 0.3) 100%)',
+    backgroundColor: 'rgba(110, 113, 145, 0.6)',
   },
 };
 
 const CompletedPopupComponent = ({ children, isOpen }) => {
-
   return (
     <Modal
       isOpen={isOpen}

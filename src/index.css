@@ -53,6 +53,12 @@ body {
   background: #fff;
 }
 
+.secondary-btn.small-btn {
+  padding: .6em;
+  width: 125px;
+  margin-top: 5px;
+}
+
 .secondary-btn.inverted-btn {
   background: #fff;
   border: 2px solid var(--p-color);
@@ -76,8 +82,8 @@ img {
   margin-top: -15px;
   background: linear-gradient(
     114.44deg,
-    rgb(131, 78, 233, 0.3) 0%,
-    rgb(98, 89, 236, 0.3) 100%
+    rgb(131, 78, 233, 0.2) 0%,
+    rgb(98, 89, 236, 0.2) 100%
   );
   padding: 0.75em;
   margin-bottom: 1em;
@@ -220,19 +226,19 @@ textarea {
   font-family: 'Manrope', sans-serif;
   font-size: 15px;
   font-weight: 600;
-  margin: 0 0.5rem;
-  padding: 0.5em;
+  margin: 0.2em 0.5rem;
+  padding: 0.5em .75em;
   cursor: pointer;
   border-radius: 25px;
   transition: all 0.5s ease;
 }
 
 .weekly-tasks-days li:first-child {
-  margin-left: 0 !important;
+  margin-left: 0.1em !important;
 }
 
 .weekly-tasks-days li:last-child {
-  margin-right: 0 !important;
+  margin-right: 0.1em !important;
 }
 
 .weekly-tasks-days li.selected {
