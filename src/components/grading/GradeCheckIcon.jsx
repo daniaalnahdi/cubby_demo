@@ -15,7 +15,7 @@ const GradeCheckIcon = ({ isSelected, updateSelectedGrade }) => {
         height='35'
         rx='17.5'
         fill='#00BA88'
-        stroke-width={isSelected ? '2px' : ''}
+        strokeWidth={isSelected ? '2px' : ''}
         stroke={isSelected ? 'black' : ''}
       />
       <path

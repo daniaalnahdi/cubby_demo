@@ -44,16 +44,16 @@ const GradingSubmissionsHeader = () => {
         <path
           d='M51 102C55.9706 102 60 97.9706 60 93C60 88.0294 55.9706 84 51 84C46.0294 84 42 88.0294 42 93C42 97.9706 46.0294 102 51 102Z'
           stroke='#6E7191'
-          stroke-width='2'
-          stroke-linecap='round'
-          stroke-linejoin='round'
+          strokeWidth='2'
+          strokeLinecap='round'
+          strokeLinejoin='round'
         />
         <path
           d='M62 104L58 100'
           stroke='#6E7191'
-          stroke-width='2'
-          stroke-linecap='round'
-          stroke-linejoin='round'
+          strokeWidth='2'
+          strokeLinecap='round'
+          strokeLinejoin='round'
         />
       </g>
       <defs>
@@ -64,9 +64,9 @@ const GradingSubmissionsHeader = () => {
           width='193'
           height='80'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolation-filters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feColorMatrix
             in='SourceAlpha'
             type='matrix'
@@ -97,9 +97,9 @@ const GradingSubmissionsHeader = () => {
           width='1223'
           height='100'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          coloInterpolation-filters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feColorMatrix
             in='SourceAlpha'
             type='matrix'
