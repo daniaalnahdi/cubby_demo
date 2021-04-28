@@ -5,7 +5,7 @@ const VideoCallButtons = () => {
     <svg
       width='85%'
       height='100%'
-      viewBox='0 0 957 76'
+      viewBox='0 0 957 70'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
     >

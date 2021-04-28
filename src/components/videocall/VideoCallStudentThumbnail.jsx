@@ -7,13 +7,14 @@ const VideoCallStudentThumbnail = ({
   src,
   pulledAside,
   updatePullAside,
+  returnedToClass
 }) => {
   return (
     <Grid item xs={3}>
       <div
         className={`video-student-thumbnail ${
-          pulledAside !== 0 && pulledAside !== idx && 'fade'
-        } ${pulledAside == idx && 'focus'}`}
+          !returnedToClass && pulledAside !== 0 && pulledAside !== idx && 'fade'
+        } ${!returnedToClass && pulledAside == idx && 'focus'}`}
       >
         <img src={src} />
         <div className='overlay'>
@@ -21,7 +22,8 @@ const VideoCallStudentThumbnail = ({
             {pulledAside === 0 && (
               <>
                 <button
-                  className='secondary-btn'
+                  className='secondary-btn small-btn white-btn'
+                  style={{marginLeft: '25%', marginBottom: '10px'}}
                   onClick={() => updatePullAside(idx)}>Pull Aside</button>
                 <VideoStudentOptions />
               </>
