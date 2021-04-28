@@ -244,6 +244,10 @@ textarea::placeholder {
   color: #a0a3bd;
 }
 
+textarea.white-textarea {
+  background: #fff;
+}
+
 /* Weekly Tasks Component */
 .weekly-tasks-days {
   display: flex;
@@ -415,7 +419,7 @@ textarea::placeholder {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 70%;
+  height: 48%;
 }
 
 .btns-grading-container button {
@@ -436,6 +440,8 @@ textarea::placeholder {
 }
 #grades-feedback-title {
   flex-grow: 1;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 /* React Modal */
