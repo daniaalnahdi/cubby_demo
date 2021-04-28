@@ -64,7 +64,7 @@ const GradingSubmissionsHeader = () => {
           width='193'
           height='80'
           filterUnits='userSpaceOnUse'
-          colorInterpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
           <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feColorMatrix
@@ -97,7 +97,7 @@ const GradingSubmissionsHeader = () => {
           width='1223'
           height='100'
           filterUnits='userSpaceOnUse'
-          coloInterpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
           <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feColorMatrix
