@@ -4,18 +4,37 @@
   --bg-color: #f7f7fc;
 }
 
-/* TODO: remove this and update others with Bozon*/
+@font-face {
+  font-family: 'Bozon';
+  src: url('./fonts/Bozon-Regular.ttf') format('opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Bozon';
+  src: url('./fonts/Bozon-DemiBold.ttf') format('opentype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Bozon';
+  src: url('./fonts/Bozon-Bold.ttf') format('opentype');
+  font-weight: 700;
+}
+
 body {
   font-family: 'Manrope', sans-serif;
   color: #14142b;
 }
 
+.cubby-ui {
+  font-family: 'Bozon' !important;
+}
+
 .titlefont {
-  font-family: 'Manrope', sans-serif;
   font-weight: 700;
 }
 .textfont {
-  font-family: 'Manrope', sans-serif;
   font-weight: 400;
 }
 .section-container {
@@ -31,16 +50,17 @@ body {
 }
 
 .section-title {
-  font-family: 'Manrope', sans-serif;
   font-weight: 600;
   font-size: 20px;
+  margin: 0.3em;
+  margin-bottom: 0.1em;
 }
 
 .secondary-btn {
   cursor: pointer;
   width: 150px;
-  font-family: 'Manrope', sans-serif;
   font-weight: 600;
+  font-family: 'Bozon' !important;
   color: #fff;
   border: 2px solid var(--p-color);
   background: var(--p-color);
@@ -132,6 +152,7 @@ img {
   border-radius: 5px;
   padding: 0.5em 1em;
   background-color: transparent;
+  font-family: 'Manrope', sans-serif;
 }
 
 .features-nav li button:hover,
@@ -230,6 +251,7 @@ header ul li {
 textarea {
   color: #14142b;
   background: #eff0f7;
+  font-family: 'Bozon' !important;
   border-radius: 30px;
   width: 100%;
   min-height: 80px;
@@ -259,8 +281,7 @@ textarea.white-textarea {
 }
 
 .weekly-tasks-days li {
-  font-family: 'Manrope', sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   margin: 0.2em 0.5rem;
   padding: 0.5em 0.75em;
@@ -307,6 +328,7 @@ textarea.white-textarea {
 .weekly-task-title-input {
   color: #6e7191;
   font-size: 28px;
+  font-family: 'Bozon' !important;
   font-weight: 600;
   outline: none;
   background-color: inherit;

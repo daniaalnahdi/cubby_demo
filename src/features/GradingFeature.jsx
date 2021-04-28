@@ -23,7 +23,7 @@ const GradingFeature = () => {
   };
 
   return (
-    <>
+    <div className='cubby-ui'>
       <HeaderComponent />
       <Grid container direction='row' spacing={2}>
         <Grid item xs={1}>
@@ -54,7 +54,7 @@ const GradingFeature = () => {
           </Link>
         </div>
       </CompletedPopupComponent>
-    </>
+    </div>
   );
 };
 
