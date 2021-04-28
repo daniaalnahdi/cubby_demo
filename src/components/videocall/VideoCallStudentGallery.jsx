@@ -23,7 +23,7 @@ const VideoCallStudentGallery = ({ setHasClickedPullAside }) => {
   return (
     <Grid container spacing={1}>
       <VideoCallStudentThumbnail
-        src={S1}
+        src={S5}
         idx={1}
         pulledAside={pulledAside}
         updatePullAside={updatePulledAside}
@@ -59,7 +59,7 @@ const VideoCallStudentGallery = ({ setHasClickedPullAside }) => {
         updatePullAside={updatePulledAside}
       />
       <VideoCallStudentThumbnail
-        src={S1}
+        src={S4}
         idx={7}
         pulledAside={pulledAside}
         updatePullAside={updatePulledAside}
