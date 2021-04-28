@@ -10,12 +10,12 @@ const customStyles = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    width: '800px',
     height: '500px',
     borderRadius: '25px',
   },
   overlay: {
-    background: 'linear-gradient(114.44deg,  rgb(131, 78, 233, 0.3) 0%, rgb(98, 89, 236, 0.3) 100%)',
+    background:
+      'linear-gradient(114.44deg,  rgb(131, 78, 233, 0.3) 0%, rgb(98, 89, 236, 0.3) 100%)',
   },
 };
 
@@ -28,9 +28,11 @@ const BriefComponent = ({ title, urlPath, children }) => {
           {children}
         </div>
         <div className='copy-buttons'>
-          <Link to={urlPath}>
-            <button className='secondary-btn'>Let's Get Started</button>
-          </Link>
+          {!!urlPath && (
+            <Link to={urlPath}>
+              <button className='secondary-btn'>Let's Get Started</button>
+            </Link>
+          )}
         </div>
       </div>
     </Modal>

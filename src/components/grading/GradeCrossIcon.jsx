@@ -15,7 +15,7 @@ const GradeCrossIcon = ({ isSelected, updateSelectedGrade }) => {
         height='36'
         rx='18'
         fill='#D9DBE9'
-        stroke-width={isSelected ? '2px' : ''}
+        strokeWidth={isSelected ? '2px' : ''}
         stroke={isSelected ? 'black' : ''}
       />
       <path
