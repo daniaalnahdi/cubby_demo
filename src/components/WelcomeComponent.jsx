@@ -14,6 +14,9 @@ const customStyles = {
     width: '800px',
     height: '500px',
   },
+  overlay: {
+    background: 'linear-gradient(114.44deg,  rgb(131, 78, 233, 0.3) 0%, rgb(98, 89, 236, 0.3) 100%)',
+  },
 };
 
 const WelcomeComponent = () => {

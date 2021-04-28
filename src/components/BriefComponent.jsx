@@ -13,6 +13,10 @@ const customStyles = {
     transform: 'translate(-50%, -50%)',
     width: '800px',
     height: '500px',
+    borderRadius: '25px',
+  },
+  overlay: {
+    background: 'linear-gradient(114.44deg,  rgb(131, 78, 233, 0.3) 0%, rgb(98, 89, 236, 0.3) 100%)',
   },
 };
 
