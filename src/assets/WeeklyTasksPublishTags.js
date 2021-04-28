@@ -3,8 +3,8 @@ import React from 'react';
 const WeeklyTasksPublishTags = () => {
   return (
     <svg
-      width='339'
-      height='70'
+      width='300'
+      height='60'
       viewBox='0 0 339 28'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'

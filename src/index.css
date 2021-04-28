@@ -7,6 +7,7 @@
 /* TODO: remove this and update others with Bozon*/
 body {
   font-family: 'Manrope', sans-serif;
+  color: #14142b;
 }
 
 .titlefont {
@@ -227,9 +228,20 @@ header ul li {
 }
 
 textarea {
+  color: #14142b;
   background: #eff0f7;
   border-radius: 30px;
   width: 100%;
+  min-height: 80px;
+  margin-bottom: 1em;
+  padding: 1em;
+  border-style: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+textarea::placeholder {
+  color: #a0a3bd;
 }
 
 /* Weekly Tasks Component */
@@ -267,6 +279,16 @@ textarea {
 
 .weekly-tasks-thumbnails {
   min-height: 180px;
+  max-height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weekly-tasks-thumbnails .no-tasks {
+  font-size: 1em;
+  font-weight: 600;
+  color: #6e7191;
 }
 
 #megaphone-emoji {
@@ -275,17 +297,23 @@ textarea {
   font-size: 3.5rem;
   border-radius: 15px;
   padding: 0.1em 0.25em;
+  margin-bottom: 0.1em;
 }
 
 .weekly-task-title-input {
-  color: #a0a3bd;
-  font-size: 24px;
+  color: #6e7191;
+  font-size: 28px;
+  font-weight: 600;
   outline: none;
   background-color: inherit;
   border-color: inherit;
   border-style: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+}
+
+.weekly-task-title-input::placeholder {
+  color: #a0a3bd;
 }
 
 /* Video Call */
