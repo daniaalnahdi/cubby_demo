@@ -30,7 +30,7 @@ const DashboardCalendarSchedule = () => {
           height='49.5'
           rx='16.4167'
           stroke='#F7F7FC'
-          stroke-width='0.5'
+          strokeWidth='0.5'
         />
       </g>
       <circle
@@ -39,7 +39,7 @@ const DashboardCalendarSchedule = () => {
         r='12'
         transform='rotate(90 368 500)'
         fill='white'
-        fill-opacity='0.5'
+        fillOpacity='0.5'
       />
       <path
         d='M368 500.977L372.125 496.852L373.303 498.03L368 503.333L362.697 498.03L363.875 496.852L368 500.977Z'
@@ -87,7 +87,7 @@ const DashboardCalendarSchedule = () => {
           height='99.5'
           rx='16.4167'
           stroke='#F7F7FC'
-          stroke-width='0.5'
+          strokeWidth='0.5'
         />
       </g>
       <circle
@@ -96,7 +96,7 @@ const DashboardCalendarSchedule = () => {
         r='12'
         transform='rotate(90 368 425)'
         fill='white'
-        fill-opacity='0.5'
+        fillOpacity='0.5'
       />
       <path
         d='M368 425.977L372.125 421.852L373.303 423.03L368 428.333L362.697 423.03L363.875 421.852L368 425.977Z'
@@ -142,7 +142,7 @@ const DashboardCalendarSchedule = () => {
           height='49.5'
           rx='16.4167'
           stroke='#F7F7FC'
-          stroke-width='0.5'
+          strokeWidth='0.5'
         />
       </g>
       <circle
@@ -222,7 +222,7 @@ const DashboardCalendarSchedule = () => {
       <path
         d='M48 97C48 91.4772 52.4772 87 58 87H94V133H58C52.4772 133 48 128.523 48 123V97Z'
         stroke='#D9DBE9'
-        stroke-width='1.13571'
+        strokeWidth='1.13571'
       />
       <path
         d='M113.926 104.445H112.725L110.247 106.091V107.311L112.667 105.704H112.725V114.357H113.926V104.445ZM121.472 114.493C123.476 114.517 124.782 113.007 124.782 111.163C124.782 109.246 123.364 107.872 121.665 107.872C120.644 107.872 119.768 108.37 119.226 109.188H119.149C119.154 106.773 120.093 105.375 121.627 105.375C122.672 105.375 123.301 106.033 123.524 106.923H124.705C124.463 105.384 123.292 104.31 121.627 104.31C119.396 104.31 118.026 106.285 118.026 109.789C118.026 113.452 119.846 114.473 121.472 114.493ZM121.472 113.428C120.228 113.428 119.318 112.368 119.323 111.182C119.328 109.997 120.281 108.937 121.511 108.937C122.725 108.937 123.621 109.934 123.621 111.163C123.621 112.421 122.687 113.428 121.472 113.428Z'
@@ -234,7 +234,7 @@ const DashboardCalendarSchedule = () => {
         width='46'
         height='46'
         stroke='#D9DBE9'
-        stroke-width='1.13571'
+        strokeWidth='1.13571'
       />
       <path
         d='M159.926 104.445H158.725L156.247 106.091V107.311L158.667 105.704H158.725V114.357H159.926V104.445ZM164.858 114.357H166.117L170.531 105.568V104.445H164.181V105.51H169.292V105.588L164.858 114.357Z'
@@ -246,7 +246,7 @@ const DashboardCalendarSchedule = () => {
         width='46'
         height='46'
         stroke='#D9DBE9'
-        stroke-width='1.13571'
+        strokeWidth='1.13571'
       />
       <rect x='186' y='87' width='46' height='46' fill='#2A00A1' />
       <path
@@ -259,7 +259,7 @@ const DashboardCalendarSchedule = () => {
         width='46'
         height='46'
         stroke='#D9DBE9'
-        stroke-width='1.13571'
+        strokeWidth='1.13571'
       />
       <path
         d='M251.926 104.445H250.725L248.247 106.091V107.311L250.667 105.704H250.725V114.357H251.926V104.445ZM259.336 104.31C257.323 104.286 256.026 105.801 256.026 107.62C256.026 109.537 257.439 110.911 259.143 110.911C260.169 110.911 261.04 110.408 261.582 109.595H261.659C261.659 112.034 260.711 113.428 259.181 113.428C258.136 113.428 257.497 112.77 257.284 111.86H256.103C256.336 113.428 257.517 114.493 259.181 114.493C261.408 114.493 262.782 112.518 262.782 108.995C262.782 105.355 260.962 104.329 259.336 104.31ZM259.336 105.375C260.575 105.375 261.485 106.439 261.485 107.601C261.485 108.782 260.517 109.847 259.298 109.847C258.078 109.847 257.188 108.859 257.188 107.62C257.188 106.381 258.117 105.375 259.336 105.375Z'
@@ -271,7 +271,7 @@ const DashboardCalendarSchedule = () => {
         width='46'
         height='46'
         stroke='#D9DBE9'
-        stroke-width='1.13571'
+        strokeWidth='1.13571'
       />
       <path
         d='M293.492 114.357H299.745V113.292H295.138V113.215L297.364 110.834C299.068 109.009 299.571 108.158 299.571 107.059C299.571 105.53 298.332 104.31 296.59 104.31C294.852 104.31 293.531 105.491 293.531 107.233H294.673C294.673 106.106 295.404 105.355 296.551 105.355C297.626 105.355 298.448 106.014 298.448 107.059C298.448 107.974 297.911 108.651 296.764 109.905L293.492 113.486V114.357ZM305.414 114.493C307.601 114.493 308.86 112.639 308.86 109.401C308.86 106.188 307.582 104.31 305.414 104.31C303.246 104.31 301.968 106.188 301.968 109.401C301.968 112.639 303.226 114.493 305.414 114.493ZM305.414 113.428C303.972 113.428 303.129 111.981 303.129 109.401C303.129 106.827 303.981 105.355 305.414 105.355C306.846 105.355 307.698 106.827 307.698 109.401C307.698 111.981 306.856 113.428 305.414 113.428Z'
@@ -283,7 +283,7 @@ const DashboardCalendarSchedule = () => {
         width='46'
         height='46'
         stroke='#D9DBE9'
-        stroke-width='1.13571'
+        strokeWidth='1.13571'
       />
       <path
         d='M339.492 114.357H345.745V113.292H341.138V113.215L343.364 110.834C345.068 109.009 345.571 108.158 345.571 107.059C345.571 105.53 344.332 104.31 342.59 104.31C340.852 104.31 339.531 105.491 339.531 107.233H340.673C340.673 106.106 341.404 105.355 342.551 105.355C343.626 105.355 344.448 106.014 344.448 107.059C344.448 107.974 343.911 108.651 342.764 109.905L339.492 113.486V114.357ZM352.75 104.445H351.549L349.071 106.091V107.311L351.491 105.704H351.549V114.357H352.75V104.445Z'
@@ -292,19 +292,19 @@ const DashboardCalendarSchedule = () => {
       <path
         d='M324 87H360C365.523 87 370 91.4772 370 97V123C370 128.523 365.523 133 360 133H324V87Z'
         stroke='#D9DBE9'
-        stroke-width='1.13571'
+        strokeWidth='1.13571'
       />
       <g opacity='0.2'>
         <path
-          fill-rule='evenodd'
-          clip-rule='evenodd'
+          fillRule='evenodd'
+          clipRule='evenodd'
           d='M354.139 19.8267L352.548 18.2357L359.065 11.7187L352.548 5.20166L354.139 3.61067L362.247 11.7187L354.139 19.8267Z'
           fill='#14142B'
         />
       </g>
       <path
-        fill-rule='evenodd'
-        clip-rule='evenodd'
+        fillRule='evenodd'
+        clipRule='evenodd'
         d='M332.861 3.61084L334.452 5.20183L327.935 11.7188L334.452 18.2358L332.861 19.8268L324.753 11.7188L332.861 3.61084Z'
         fill='#14142B'
       />
@@ -325,9 +325,9 @@ const DashboardCalendarSchedule = () => {
           width='352.667'
           height='116.667'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feColorMatrix
             in='SourceAlpha'
             type='matrix'
@@ -358,9 +358,9 @@ const DashboardCalendarSchedule = () => {
           width='352.667'
           height='166.667'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feColorMatrix
             in='SourceAlpha'
             type='matrix'
@@ -391,9 +391,9 @@ const DashboardCalendarSchedule = () => {
           width='352.667'
           height='116.667'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feColorMatrix
             in='SourceAlpha'
             type='matrix'
@@ -449,8 +449,8 @@ const DashboardCalendarSchedule = () => {
           y2='614.389'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#EB0055' />
-          <stop offset='1' stop-color='#FFFA80' />
+          <stop stopColor='#EB0055' />
+          <stop offset='1' stopColor='#FFFA80' />
         </linearGradient>
         <linearGradient
           id='cal-paint1_linear'
@@ -460,8 +460,8 @@ const DashboardCalendarSchedule = () => {
           y2='505.604'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#EB0055' />
-          <stop offset='1' stop-color='#FFFA80' />
+          <stop stopColor='#EB0055' />
+          <stop offset='1' stopColor='#FFFA80' />
         </linearGradient>
         <linearGradient
           id='cal-paint2_linear'
@@ -471,8 +471,8 @@ const DashboardCalendarSchedule = () => {
           y2='576.039'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#624AF2' />
-          <stop offset='1' stop-color='#50DDC3' />
+          <stop stopColor='#624AF2' />
+          <stop offset='1' stopColor='#50DDC3' />
         </linearGradient>
         <linearGradient
           id='cal-paint3_linear'
@@ -482,8 +482,8 @@ const DashboardCalendarSchedule = () => {
           y2='430.604'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#624AF2' />
-          <stop offset='1' stop-color='#50DDC3' />
+          <stop stopColor='#624AF2' />
+          <stop offset='1' stopColor='#50DDC3' />
         </linearGradient>
         <linearGradient
           id='cal-paint4_linear'
@@ -493,8 +493,8 @@ const DashboardCalendarSchedule = () => {
           y2='414.389'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#7433FF' />
-          <stop offset='1' stop-color='#FFA3FD' />
+          <stop stopColor='#7433FF' />
+          <stop offset='1' stopColor='#FFA3FD' />
         </linearGradient>
         <linearGradient
           id='cal-paint5_linear'
@@ -504,24 +504,12 @@ const DashboardCalendarSchedule = () => {
           y2='305.604'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#7433FF' />
-          <stop offset='1' stop-color='#FFA3FD' />
+          <stop stopColor='#7433FF' />
+          <stop offset='1' stopColor='#FFA3FD' />
         </linearGradient>
-        <image
-          id='image0'
-          width='160'
-          height='160'
-        />
-        <image
-          id='image1'
-          width='160'
-          height='160'
-        />
-        <image
-          id='image2'
-          width='160'
-          height='160'
-        />
+        <image id='image0' width='160' height='160' />
+        <image id='image1' width='160' height='160' />
+        <image id='image2' width='160' height='160' />
       </defs>
     </svg>
   );
