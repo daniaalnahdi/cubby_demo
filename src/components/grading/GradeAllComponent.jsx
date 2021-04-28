@@ -35,7 +35,7 @@ const GradeAllComponent = ({ completeTask }) => {
               <span className='tooltiptext'>2. Assign a Grade</span>
             )}
           </div>
-          <div className='tooltip'>
+          <div className='tooltip textarea'>
             <textarea
               className='Send comment to family'
               onChange={() => setIsFeedbackWritten(true)}
