@@ -1,7 +1,5 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
 import Modal from 'react-modal';
-import WelcomeComponent from './WelcomeComponent';
 
 //Popup Style
 const customStyles = {
@@ -18,7 +16,6 @@ const customStyles = {
 };
 
 const CompletedPopupComponent = ({ children, isOpen }) => {
-  const currentURL = useLocation().pathname;
 
   return (
     <Modal
