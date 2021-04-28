@@ -1,31 +1,40 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
 
-
 const SubmissionRowComponent = (props) => {
   return (
     <div>
       <Grid container direction='row' spacing={3} alignItems='center'>
-        <Grid item xs={3}>
+        <Grid item xs={5}>
           <div>
-            <span><div className="textfont">📝Assignment Name</div></span>
+            <span>{props.emoji}</span>
+            <span>
+              <div className='textfont'>{props.title}</div>
+            </span>
+            <span>
+              <div className='textfont'>{props.subtitle}</div>
+            </span>
           </div>
         </Grid>
-        <Grid item xs={2}>
-          <div className="textfont">Audio</div>
-        </Grid>
         <Grid item xs={3}>
-          <div className="textfont">Feb 22.</div>
+          <div className='textfont'>{props.date}</div>
         </Grid>
         <Grid item xs={2}>
-          <div className="textfont">26/28</div>
+          <div className='textfont'>{props.submitted}/28</div>
         </Grid>
         <Grid item xs={2}>
           <div className='tooltip'>
-            <button className='secondary-btn' onClick={props.toggleIsGrading}>
+            <button
+              className='secondary-btn'
+              onClick={!!props.tooltip ? props.toggleIsGrading : null}
+            >
               Grade All
             </button>
-            <span className='tooltiptext'>1. Click to view the assignment</span>
+            {props.tooltip && (
+              <span className='tooltiptext'>
+                1. Click to view the assignment
+              </span>
+            )}
           </div>
         </Grid>
       </Grid>
