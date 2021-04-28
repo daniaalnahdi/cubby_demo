@@ -59,6 +59,15 @@ body {
   color: var(--p-color);
 }
 
+.secondary-btn.grey-btn {
+  background: #d9dbe9;
+  border-color: #d9dbe9;
+}
+
+.secondary-btn.grey-btn:hover {
+  color: #fff;
+}
+
 img {
   width: 100%;
 }
@@ -319,4 +328,33 @@ textarea {
 
 .welcome-screen p {
   font-size: 1.5rem;
+}
+
+/* Grading */
+
+.btns-grading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 70%;
+}
+
+.btns-grading-container button {
+  width: 100%;
+}
+
+.btns-grading-container .grey-btn {
+  margin-top: 1em;
+}
+
+.grades-toggle svg {
+  margin: 0em 0.25em;
+}
+
+.grades-feedback-options {
+  display: flex;
+  justify-content: flex-end;
+}
+#grades-feedback-title {
+  flex-grow: 1;
 }
