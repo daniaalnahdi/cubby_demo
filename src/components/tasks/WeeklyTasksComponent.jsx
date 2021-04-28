@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
-import { colors, Grid } from '@material-ui/core';
-import Modal from 'react-modal';
-import { Link, useLocation } from 'react-router-dom';
-
+import { Grid } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 import WeeklyTasksThumbnails from '../../assets/WeeklyTasksThumbnails';
 import GenericPopupComponent from '../GenericPopupComponent';
 import CompletedPopupComponent from '../CompletedPopupComponent';
+
+import WeeklyTasksPublishTo from '../../assets/WeeklyTasksPublishTo';
+import WeeklyTasksPublishTags from '../../assets/WeeklyTasksPublishTags';
+import WeeklyTasksPublishActions from '../../assets/WeeklyTasksPublishActions';
 
 const WeeklyTasksComponent = () => {
   const [selectedDay, setSelectedDay] = useState('Monday');
@@ -22,10 +24,8 @@ const WeeklyTasksComponent = () => {
     setHasSelectedDay(true);
   };
 
-
   return (
     <div className='section-container section-container-height-auto '>
-      <div className='section-title'>Bulletin Board</div>
       <Grid container direction='row' spacing={3}>
         <Grid item xs={9}>
           <div className='tooltip'>
@@ -72,39 +72,57 @@ const WeeklyTasksComponent = () => {
         isOpen={hasClickedNew && !isTaskComplete}
         onRequestClose={() => setIsTaskComplete(true)}
       >
-        <div className="form">
-        <div className='tooltip' style={{ marginTop: '2em' }}>
-          <input
-            type='text'
-            placeholder='Insert Title Here'
-            onChange={() => setHasAddedTitle(true)}
-          />
-          {!hasAddedTitle && (
-            <span className='tooltiptext'>3. Add a title</span>
-          )}
-        </div>
-        <div className='tooltip' style={{ marginTop: '2em' }}>
-          <textarea
-            placeholder='Insert a description here'
-            onChange={() => setHasAddedDesc(true)}
-          ></textarea>
+        <div id='megaphone-emoji'>📣</div>
+        <div className='copy-container'>
+          <div className='copy-body'>
+            <Grid container direction='row' spacing={3} alignItems='center'>
+              <Grid item xs={6}>
+                <div className='tooltip'>
+                  <input
+                    className='weekly-task-title-input'
+                    type='text'
+                    placeholder='Insert Title Here'
+                    onChange={() => setHasAddedTitle(true)}
+                  />
+                  {!hasAddedTitle && (
+                    <span className='tooltiptext'>3. Add a title</span>
+                  )}
+                </div>
+              </Grid>
+              <Grid item xs={6}>
+                <WeeklyTasksPublishTo />
+              </Grid>
+            </Grid>
+            <WeeklyTasksPublishTags />
+            <div className='tooltip textarea'>
+              <textarea
+                placeholder='Insert a description here'
+                onChange={() => setHasAddedDesc(true)}
+              ></textarea>
 
-          {hasAddedTitle && !hasAddedDesc && (
-            <span className='tooltiptext'>4. Add a description</span>
-          )}
+              {hasAddedTitle && !hasAddedDesc && (
+                <span className='tooltiptext'>4. Add a description</span>
+              )}
+            </div>
+            <WeeklyTasksPublishActions />
+          </div>
+          <div className='copy-buttons right-buttons'>
+            <div>
+              <button className='secondary-btn inverted-btn'>Cancel</button>
+            </div>
+            <div className='tooltip'>
+              <button
+                className='secondary-btn'
+                onClick={() => setIsTaskComplete(true)}
+              >
+                Publish
+              </button>
+              {hasAddedTitle && hasAddedDesc && (
+                <span className='tooltiptext'>4. Publish task</span>
+              )}{' '}
+            </div>
+          </div>
         </div>
-        <div className='tooltip'>
-          <button
-            className='secondary-btn'
-            onClick={() => setIsTaskComplete(true)}
-          >
-              Publish
-          </button>
-          </div>
-          </div>
-          {hasAddedTitle && hasAddedDesc && (
-            <span className='tooltiptext'>4. Publish task</span>
-          )}{' '}
       </GenericPopupComponent>
       <CompletedPopupComponent isOpen={isTaskComplete}>
         <p className='textfont'>You added a weekly task!</p>
@@ -116,10 +134,7 @@ const WeeklyTasksComponent = () => {
             Re-do task
           </button>
           <Link to='/grades'>
-            <button
-            className='secondary-btn'
-          >
-            next task</button>
+            <button className='secondary-btn'>next task</button>
           </Link>
         </div>
       </CompletedPopupComponent>

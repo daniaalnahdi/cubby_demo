@@ -9,9 +9,17 @@ const customStyles = {
     right: 'auto',
     bottom: 'auto',
     marginRight: '-50%',
+    borderRadius: '40px',
+    backgroundColor: '#f7f7fc',
+    border: 'none',
     transform: 'translate(-50%, -50%)',
     width: '800px',
-    height: '500px',
+    height: '550px',
+    padding: '2em 4.5em',
+    overflow: 'hidden'
+  },
+  overlay: {
+    backgroundColor: 'rgba(110, 113, 145, 0.6)',
   },
 };
 

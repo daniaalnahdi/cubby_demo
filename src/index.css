@@ -32,10 +32,12 @@ body {
 .section-title {
   font-family: 'Manrope', sans-serif;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .secondary-btn {
+  cursor: pointer;
+  width: 150px;
   font-family: 'Manrope', sans-serif;
   font-weight: 600;
   color: #fff;
@@ -49,6 +51,12 @@ body {
 .secondary-btn:hover {
   color: var(--p-color);
   background: #fff;
+}
+
+.secondary-btn.inverted-btn {
+  background: #fff;
+  border: 2px solid var(--p-color);
+  color: var(--p-color);
 }
 
 img {
@@ -68,7 +76,7 @@ img {
 }
 
 .features-nav li button {
-  color: #682cda;
+  color: var(--p-color);
   border: 2px solid var(--p-color);
   border-radius: 40px;
 }
@@ -122,13 +130,13 @@ header ul li {
 /* Tooltip text */
 .tooltip .tooltiptext {
   font-family: 'Manrope', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   width: 200px;
   background-color: black;
-  opacity: 60%;
+  opacity: 70%;
   color: #fff;
   text-align: center;
-  padding: 5px 0;
+  padding: 5px 10px;
   border-radius: 6px;
   transition: 5s;
 
@@ -152,6 +160,17 @@ header ul li {
   border-width: 5px;
   border-style: solid;
   border-color: black transparent transparent transparent;
+}
+
+/* Textarea styles */
+.tooltip.textarea {
+  width: 100%;
+}
+
+textarea {
+  background: #eff0f7;
+  border-radius: 30px;
+  width: 100%;
 }
 
 /* Weekly Tasks Component */
@@ -190,9 +209,23 @@ header ul li {
   min-height: 180px;
 }
 
-.form {
-  float: left;
+#megaphone-emoji {
+  background: #eff0f7;
   display: inline-block;
+  font-size: 3.5rem;
+  border-radius: 15px;
+  padding: 0.1em 0.25em;
+}
+
+.weekly-task-title-input {
+  color: #a0a3bd;
+  font-size: 24px;
+  outline: none;
+  background-color: inherit;
+  border-color: inherit;
+  border-style: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 /* Video Call */
@@ -256,7 +289,7 @@ header ul li {
   opacity: 0.5;
 }
 
-/* Demo UI */
+/* Popup and Demo UI layout */
 .copy-container {
   display: flex;
   flex-direction: column;
@@ -264,7 +297,7 @@ header ul li {
 }
 
 .copy-body {
-  flex-grow: 3;
+  flex-grow: 2;
 }
 
 .copy-body p {
@@ -273,6 +306,15 @@ header ul li {
 
 .copy-buttons {
   flex-grow: 1;
+}
+.copy-buttons button {
+  margin: 0 0.5em;
+}
+
+.copy-buttons.right-buttons {
+  display: flex;
+  align-content: flex-end;
+  justify-content: flex-end;
 }
 
 .welcome-screen p {
