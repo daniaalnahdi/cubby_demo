@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap');
 :root {
   --p-color: #682cda;
   --bg-color: #f7f7fc;
@@ -6,15 +6,15 @@
 
 /* TODO: remove this and update others with Bozon*/
 body {
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
 }
 
 .titlefont {
-  font-family: "Manrope", sans-serif;
-  font-weight: 800;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
 }
 .textfont {
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-weight: 400;
 }
 .section-container {
@@ -30,7 +30,7 @@ body {
 }
 
 .section-title {
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
@@ -72,11 +72,22 @@ img {
   width: 100%;
 }
 
+.features-nav-container {
+  margin-top: -15px;
+  background: linear-gradient(
+    114.44deg,
+    rgb(131, 78, 233, 0.3) 0%,
+    rgb(98, 89, 236, 0.3) 100%
+  );
+  padding: 0.75em;
+  margin-bottom: 1em;
+}
+
 .features-nav {
   display: flex;
-  margin-bottom: 20px;
-  margin-left: 30%;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   list-style: none;
 }
 
@@ -84,15 +95,28 @@ img {
   margin: 0 1rem;
 }
 
-.features-nav li button {
+.features-nav li button,
+.feature-btn {
+  cursor: pointer;
+  font-size: 16px;
+  width: 220px;
   color: var(--p-color);
   border: 2px solid var(--p-color);
-  border-radius: 40px;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  background-color: transparent;
 }
 
-.features-nav li button:hover {
-  color: #fff;
-  background: var(--p-color);
+.features-nav li button:hover,
+.feature-btn {
+  color: #2a00a1 !important;
+  border: 2px solid #2a00a1;
+}
+
+.features-nav li button.selected {
+  font-weight: 800;
+  border: 3px solid #2a00a1;
+  color: #2a00a1 !important;
 }
 
 /* Popup style */
@@ -161,7 +185,7 @@ header ul li {
 
 /* Tooltip */
 .tooltip .tooltiptext::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   top: 100%; /* At the bottom of the tooltip */
   left: 50%;
@@ -193,7 +217,7 @@ textarea {
 }
 
 .weekly-tasks-days li {
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-size: 15px;
   font-weight: 600;
   margin: 0 0.5rem;
