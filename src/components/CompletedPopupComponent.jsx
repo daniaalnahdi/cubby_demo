@@ -1,5 +1,6 @@
 import React from 'react';
 import Modal from 'react-modal';
+import { Link } from 'react-router-dom';
 
 //Popup Style
 const customStyles = {
@@ -13,13 +14,14 @@ const customStyles = {
     width: '800px',
     height: '500px',
     borderRadius: '25px',
+    padding: '2em',
   },
   overlay: {
     backgroundColor: 'rgba(110, 113, 145, 0.6)',
   },
 };
 
-const CompletedPopupComponent = ({ children, isOpen }) => {
+const CompletedPopupComponent = ({ isOpen, body, nextFeatureURL, img }) => {
   return (
     <Modal
       isOpen={isOpen}
@@ -27,10 +29,29 @@ const CompletedPopupComponent = ({ children, isOpen }) => {
       style={customStyles}
       ariaHideApp={false}
     >
-      <div className='copy-container'>
+      <div className='demo-ui copy-container'>
         <div className='copy-body'>
-          <h2 className='titlefont'>Task Completed!</h2>
-          {children}
+          <h1 className='titlefont' style={{ textAlign: 'center' }}>
+            Done! 🎉
+          </h1>
+          <p className='textfont'>{body}</p>
+          <p>Here's a peek of what your students see:</p>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            {!!img && <img style={{ width: '400px', border: '1px solid lightgrey' }} src={img} />}
+          </div>
+        </div>
+        <div className='copy-buttons'>
+          <button
+            className='secondary-btn feature-btn'
+            onClick={() => window.location.reload()}
+          >
+            Try Again ↺
+          </button>
+          <Link to={nextFeatureURL}>
+            <button className='secondary-btn feature-btn'>
+              Try Next Feature →
+            </button>
+          </Link>
         </div>
       </div>
     </Modal>

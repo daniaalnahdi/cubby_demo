@@ -42,7 +42,7 @@ const GradeAllComponent = ({ completeTask }) => {
                 updateSelectedGrade={() => updateSelectedGrade('check')}
               />
               {!isGradeSelected && (
-                <span className='tooltiptext'>2. Assign a Grade</span>
+                <span className='tooltiptext'>2. Assign feedback</span>
               )}
             </div>
           </div>
@@ -54,7 +54,10 @@ const GradeAllComponent = ({ completeTask }) => {
                 onChange={() => setIsFeedbackWritten(true)}
               />
               {isGradeSelected && !isFeedbackWritten && (
-                <span className='tooltiptext'>3. Write some feedback</span>
+                <span className='tooltiptext'>
+                  3. Provide personalized feedback for the student and their
+                  family
+                </span>
               )}
             </div>
           </div>
@@ -65,7 +68,7 @@ const GradeAllComponent = ({ completeTask }) => {
                 Send
               </button>
               {isFeedbackWritten && (
-                <span className='tooltiptext'>4. Save Changes</span>
+                <span className='tooltiptext'>4. Submit your feedback</span>
               )}
             </div>
             <button className='secondary-btn grey-btn' onClick={completeTask}>

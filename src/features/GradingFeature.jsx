@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { Grid } from '@material-ui/core';
-import { Link } from 'react-router-dom';
-
 
 // Popup
 import CompletedPopupComponent from '../components/CompletedPopupComponent';
@@ -13,6 +11,8 @@ import SidebarComponent from '../components/SidebarComponent';
 //Grading Components
 import SubmissionsListComponent from '../components/grading/SubmissionsListComponent';
 import GradeAllComponent from '../components/grading/GradeAllComponent';
+
+import StudentGrades from '../images/StudentGrades.png';
 
 const GradingFeature = () => {
   const [isGrading, setIsGrading] = useState(false);
@@ -37,23 +37,12 @@ const GradingFeature = () => {
           )}
         </Grid>
       </Grid>
-      <CompletedPopupComponent isOpen={isTaskComplete}>
-        <p className='textfont'>You added a grade!</p>
-        <div className='copy-buttons'>
-          <button
-            className='secondary-btn'
-            onClick={() => window.location.reload()}
-          >
-            Re-do task
-          </button>
-          <Link to='/video'>
-            <button
-            className='secondary-btn'
-          >
-            next task</button>
-          </Link>
-        </div>
-      </CompletedPopupComponent>
+      <CompletedPopupComponent
+        isOpen={isTaskComplete}
+        body='You just added feedback on a submission!'
+        nextFeatureURL='/video'
+        img={StudentGrades}
+      />
     </div>
   );
 };

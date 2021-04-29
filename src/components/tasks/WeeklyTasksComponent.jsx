@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import { Grid } from '@material-ui/core';
-import { Link } from 'react-router-dom';
 
 import WeeklyTasksThumbnails from '../../assets/WeeklyTasksThumbnails';
 import GenericPopupComponent from '../GenericPopupComponent';
 import CompletedPopupComponent from '../CompletedPopupComponent';
-
 import WeeklyTasksPublishTo from '../../assets/WeeklyTasksPublishTo';
 import WeeklyTasksPublishTags from '../../assets/WeeklyTasksPublishTags';
 import WeeklyTasksPublishActions from '../../assets/WeeklyTasksPublishActions';
+import StudentTask from '../../images/StudentTask.png'
 
 const WeeklyTasksComponent = () => {
   const [selectedDay, setSelectedDay] = useState('Monday');
@@ -70,7 +69,7 @@ const WeeklyTasksComponent = () => {
         {selectedDay === 'Monday' ? (
           <WeeklyTasksThumbnails />
         ) : (
-          <div className='no-tasks'>Add a task for this day!</div>
+          <div className='no-tasks'>No tasks assigned (yet)!</div>
         )}
       </div>
       <GenericPopupComponent
@@ -78,7 +77,7 @@ const WeeklyTasksComponent = () => {
         onRequestClose={() => setIsTaskComplete(true)}
       >
         <div id='megaphone-emoji'>📣</div>
-        <div className='copy-container'>
+        <div className=''>
           <div className='copy-body'>
             <Grid container direction='row' spacing={3} alignItems='center'>
               <Grid item xs={6}>
@@ -90,7 +89,7 @@ const WeeklyTasksComponent = () => {
                     onChange={() => setHasAddedTitle(true)}
                   />
                   {!hasAddedTitle && (
-                    <span className='tooltiptext'>3. Add a title</span>
+                    <span className='tooltiptext'>3. Add a title for the task</span>
                   )}
                 </div>
               </Grid>
@@ -106,12 +105,15 @@ const WeeklyTasksComponent = () => {
               ></textarea>
 
               {hasAddedTitle && !hasAddedDesc && (
-                <span className='tooltiptext'>4. Add a description</span>
+                <span className='tooltiptext'>4. Add a description of the task</span>
               )}
             </div>
             <WeeklyTasksPublishActions />
           </div>
-          <div className='copy-buttons right-buttons'>
+          <div
+            className='copy-buttons right-buttons'
+            style={{ marginTop: '1em' }}
+          >
             <div>
               <button className='secondary-btn inverted-btn'>Cancel</button>
             </div>
@@ -123,26 +125,18 @@ const WeeklyTasksComponent = () => {
                 Publish
               </button>
               {hasAddedTitle && hasAddedDesc && (
-                <span className='tooltiptext'>4. Publish task</span>
+                <span className='tooltiptext'>4. Publish the task for students to see</span>
               )}{' '}
             </div>
           </div>
         </div>
       </GenericPopupComponent>
-      <CompletedPopupComponent isOpen={isTaskComplete}>
-        <p className='textfont'>You added a weekly task!</p>
-        <div className='copy-buttons'>
-          <button
-            className='secondary-btn'
-            onClick={() => window.location.reload()}
-          >
-            Re-do task
-          </button>
-          <Link to='/grades'>
-            <button className='secondary-btn'>next task</button>
-          </Link>
-        </div>
-      </CompletedPopupComponent>
+      <CompletedPopupComponent
+        isOpen={isTaskComplete}
+        body='You successfully added a task!'
+        nextFeatureURL='/grades'
+        img={StudentTask}
+      />
     </div>
   );
 };

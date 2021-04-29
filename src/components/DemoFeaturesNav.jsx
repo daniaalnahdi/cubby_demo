@@ -39,7 +39,7 @@ const DemoFeaturesNav = () => {
                   currentURL.includes('video') ? 'selected' : ''
                 }`}
               >
-                Enter Video Call
+                Start Video Call
               </button>
             </Link>
           </li>
