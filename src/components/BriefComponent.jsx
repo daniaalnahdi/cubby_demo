@@ -12,6 +12,7 @@ const customStyles = {
     transform: 'translate(-50%, -50%)',
     height: '500px',
     borderRadius: '25px',
+    padding: '2em',
   },
   overlay: {
     background:
@@ -22,15 +23,26 @@ const customStyles = {
 const BriefComponent = ({ title, urlPath, children }) => {
   return (
     <Modal isOpen={true} style={customStyles} ariaHideApp={false}>
-      <div className='copy-container'>
+      <div className='demo-ui copy-container'>
         <div className='copy-body'>
           <h2>{title}</h2>
           {children}
+          {!!urlPath && (
+            <p style={{ marginTop: '1em' }}>
+              Follow along the steps in the{' '}
+              <span className='tooltip-example'>
+                <span></span>
+                <span className='tooltiptext'>speech bubbles!</span>
+              </span>
+            </p>
+          )}
         </div>
         <div className='copy-buttons'>
           {!!urlPath && (
             <Link to={urlPath}>
-              <button className='secondary-btn'>Let's Get Started</button>
+              <button className='secondary-btn feature-btn'>
+                Let's Get Started!
+              </button>
             </Link>
           )}
         </div>

@@ -1,32 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { Grid } from '@material-ui/core';
-import { Link } from 'react-router-dom';
 
 import VideoCallButtons from '../../assets/VideoCallButtons';
 import VideoCallStudentGallery from './VideoCallStudentGallery';
 import CompletedPopupComponent from '../CompletedPopupComponent';
+import StudentVideo from '../../images/StudentVideo.png'
 
 const VideoCallView = () => {
   const [hasClickedPullAside, setHasClickedPullAside] = useState(false);
   const [returnedToClass, setReturnedToClass] = useState(false);
   const [isTaskComplete, setIsTaskComplete] = useState(false);
 
-  useEffect(() => {
-    let popupTimer = setTimeout(() => {
-      if (!!returnedToClass) {
-        setIsTaskComplete(true);
-      }
-    }, 1000);
-    return () => {
-      clearTimeout(popupTimer);
-    };
-  }, [returnedToClass]);
-
   return (
-    <div
-      className='section-container'
-      style={{ paddingLeft: '2em', paddingRight: '2em' }}
-    >
+    <div className='section-container'>
       <div className='tooltip'>
         <VideoCallStudentGallery
           setHasClickedPullAside={() => setHasClickedPullAside(true)}
@@ -35,13 +21,13 @@ const VideoCallView = () => {
         />
         {!hasClickedPullAside && (
           <span className='tooltiptext'>
-            1. Pick any student to pull aside on
+            1. Hover over any student's video and click "Pull Aside"
           </span>
         )}
       </div>
       <Grid container spacing={2} alignItems='center'>
         <Grid item xs={10}>
-          <div style={{ marginTop: '2em' }}>
+          <div style={{ marginTop: '1.5em' }}>
             <VideoCallButtons />
           </div>
         </Grid>
@@ -56,36 +42,35 @@ const VideoCallView = () => {
                   Return to Class
                 </button>
                 <span className='tooltiptext'>
-                  2. When you're done with your conversation, hover over the
-                  student and click to return to class
+                  2. When you're done with your conversation, click to resume
+                  class
                 </span>
               </div>
             )}
             {(!hasClickedPullAside || !!returnedToClass) && (
-              <button
-                className='secondary-btn red-btn'
-                onClick={() => setReturnedToClass(true)}
-              >
-                End Call
-              </button>
+              <div className='tooltip'>
+                <button
+                  className='secondary-btn red-btn'
+                  onClick={() => setIsTaskComplete(true)}
+                >
+                  End Call
+                </button>
+                {returnedToClass && (
+                  <span className='tooltiptext'>
+                    3. Click to end the video session
+                  </span>
+                )}
+              </div>
             )}
           </div>
         </Grid>
       </Grid>
-      <CompletedPopupComponent isOpen={isTaskComplete}>
-        <p className='textfont'>You started a video call!</p>
-        <div className='copy-buttons'>
-          <button
-            className='secondary-btn'
-            onClick={() => window.location.reload()}
-          >
-            Re-do task
-          </button>
-          <Link to='/tasks'>
-            <button className='secondary-btn'>next task</button>
-          </Link>
-        </div>
-      </CompletedPopupComponent>
+      <CompletedPopupComponent
+        isOpen={isTaskComplete}
+        body='You just hosted a virtual class!'
+        nextFeatureURL='/tasks'
+        img={StudentVideo}
+      />
     </div>
   );
 };

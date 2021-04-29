@@ -60,9 +60,21 @@ const App = () => {
           <Route path='/tasks'>
             {!!isDesktop && (
               <>
-                <BriefComponent title='Tasks Feature' urlPath='/tasks/demo'>
+                <BriefComponent title='Add a Task' urlPath='/tasks/demo'>
                   <p className='textfont'>
-                    We will now add a task for a student.
+                    Let's try assigning tasks to students!
+                  </p>
+                  <p>
+                    With Cubby, you can schedule and post tasks that are
+                    organized by weekday. We support various formats, such as
+                    rich text and multimedia uploads, to accomodate your needs
+                    and preferences.
+                  </p>
+                  <p>
+                    <strong>
+                      Right now, we'll walk through the process of assigning a
+                      task in plain text format.
+                    </strong>
                   </p>
                 </BriefComponent>
               </>
@@ -71,8 +83,22 @@ const App = () => {
           <Route path='/grades'>
             {!!isDesktop && (
               <>
-                <BriefComponent title='Grades Feature' urlPath='/grades/demo'>
-                  <p className='textfont'>We will now enter student grades.</p>
+                <BriefComponent
+                  title='Grade a Submission'
+                  urlPath='/grades/demo'
+                >
+                  <p className='textfont'>Let's try grading a student!</p>
+                  <p>
+                    Cubby's feedback system is directed at both students and
+                    their families to keep everyone engaged in the learning
+                    process.
+                  </p>
+                  <p>
+                    <strong>
+                      Right now, we'll walk through the process of grading an
+                      assignment.
+                    </strong>
+                  </p>
                 </BriefComponent>
               </>
             )}
@@ -80,9 +106,22 @@ const App = () => {
           <Route path='/video'>
             {!!isDesktop && (
               <>
-                <BriefComponent title='Video Feature' urlPath='/video/demo'>
+                <BriefComponent title='Start Video Call' urlPath='/video/demo'>
                   <p className='textfont'>
-                    We will now start a video call conference.
+                    Let's try hosting a virtual class through a video call!
+                  </p>
+                  <p>
+                    Cubby's video integration stands out amongst current
+                    conferencing tools; it provides many unique features
+                    specific to student engagement and facilitating classroom
+                    activities.
+                  </p>
+                  <p>
+                    <strong>
+                      Right now, we'll test out one of our unique features:
+                      "Pull Aside". This allows teachers to have a private
+                      conversation with a single student during class.
+                    </strong>
                   </p>
                 </BriefComponent>
               </>

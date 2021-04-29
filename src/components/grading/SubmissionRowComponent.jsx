@@ -43,7 +43,7 @@ const SubmissionRowComponent = (props) => {
             </button>
             {props.tooltip && (
               <span className='tooltiptext'>
-                1. Click to view the assignment
+                1. Click to view submissions for this task
               </span>
             )}
           </div>
