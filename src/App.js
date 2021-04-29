@@ -87,7 +87,9 @@ const App = () => {
                   title='✔️ Grade a Submission'
                   urlPath='/grades/demo'
                 >
-                  <p className='textfont'>Let's provide feedback to a student's work!</p>
+                  <p className='textfont'>
+                    Let's provide feedback to a student's work!
+                  </p>
                   <p>
                     Cubby's feedback system is directed at both students and
                     their families to keep everyone engaged in the learning
@@ -95,8 +97,8 @@ const App = () => {
                   </p>
                   <p>
                     <strong>
-                      Right now, we'll walk through the process of grading an
-                      assignment.
+                      Right now, we'll walk through the process of providing
+                      feedback to an assigned task.
                     </strong>
                   </p>
                 </BriefComponent>
