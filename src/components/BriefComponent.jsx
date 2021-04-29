@@ -29,7 +29,7 @@ const BriefComponent = ({ title, urlPath, children }) => {
           {children}
           {!!urlPath && (
             <p style={{ marginTop: '1em' }}>
-              Follow along the steps in the{' '}
+              Follow the steps in the{' '}
               <span className='tooltip-example'>
                 <span></span>
                 <span className='tooltiptext'>speech bubbles!</span>
