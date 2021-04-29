@@ -60,7 +60,7 @@ const App = () => {
           <Route path='/tasks'>
             {!!isDesktop && (
               <>
-                <BriefComponent title='Add a Task' urlPath='/tasks/demo'>
+                <BriefComponent title='📝 Add a Task' urlPath='/tasks/demo'>
                   <p className='textfont'>
                     Let's try assigning tasks to students!
                   </p>
@@ -84,10 +84,10 @@ const App = () => {
             {!!isDesktop && (
               <>
                 <BriefComponent
-                  title='Grade a Submission'
+                  title='✔️ Grade a Submission'
                   urlPath='/grades/demo'
                 >
-                  <p className='textfont'>Let's try grading a student!</p>
+                  <p className='textfont'>Let's provide feedback to a student's work!</p>
                   <p>
                     Cubby's feedback system is directed at both students and
                     their families to keep everyone engaged in the learning
@@ -106,7 +106,10 @@ const App = () => {
           <Route path='/video'>
             {!!isDesktop && (
               <>
-                <BriefComponent title='Start Video Call' urlPath='/video/demo'>
+                <BriefComponent
+                  title='📹 Start Video Call'
+                  urlPath='/video/demo'
+                >
                   <p className='textfont'>
                     Let's try hosting a virtual class through a video call!
                   </p>
