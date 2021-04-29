@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/cubby-demo/static/css/main.0ca2ed29.chunk.css",
+    "main.js": "/cubby-demo/static/js/main.cb6ceefd.chunk.js",
+    "main.js.map": "/cubby-demo/static/js/main.cb6ceefd.chunk.js.map",
+    "runtime-main.js": "/cubby-demo/static/js/runtime-main.25ea9bb5.js",
+    "runtime-main.js.map": "/cubby-demo/static/js/runtime-main.25ea9bb5.js.map",
+    "static/js/2.abbb4f39.chunk.js": "/cubby-demo/static/js/2.abbb4f39.chunk.js",
+    "static/js/2.abbb4f39.chunk.js.map": "/cubby-demo/static/js/2.abbb4f39.chunk.js.map",
+    "index.html": "/cubby-demo/index.html",
+    "static/css/main.0ca2ed29.chunk.css.map": "/cubby-demo/static/css/main.0ca2ed29.chunk.css.map",
+    "static/js/2.abbb4f39.chunk.js.LICENSE.txt": "/cubby-demo/static/js/2.abbb4f39.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/cubby-demo/static/media/Bozon-Regular.ab92025e.ttf",
+    "static/media/MathHomework.29217c78.png": "/cubby-demo/static/media/MathHomework.29217c78.png",
+    "static/media/Student1.a09dc457.png": "/cubby-demo/static/media/Student1.a09dc457.png",
+    "static/media/Student2.b67a2919.png": "/cubby-demo/static/media/Student2.b67a2919.png",
+    "static/media/Student3.2e239e39.png": "/cubby-demo/static/media/Student3.2e239e39.png",
+    "static/media/Student4.6c0a1213.png": "/cubby-demo/static/media/Student4.6c0a1213.png",
+    "static/media/Student5.ac185024.png": "/cubby-demo/static/media/Student5.ac185024.png",
+    "static/media/Student6.b5f314f9.png": "/cubby-demo/static/media/Student6.b5f314f9.png",
+    "static/media/StudentGrades.281191d9.png": "/cubby-demo/static/media/StudentGrades.281191d9.png",
+    "static/media/StudentTask.5ef79cfd.png": "/cubby-demo/static/media/StudentTask.5ef79cfd.png",
+    "static/media/StudentVideo.a151f65c.png": "/cubby-demo/static/media/StudentVideo.a151f65c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.25ea9bb5.js",
+    "static/js/2.abbb4f39.chunk.js",
+    "static/css/main.0ca2ed29.chunk.css",
+    "static/js/main.cb6ceefd.chunk.js"
+  ]
+}
