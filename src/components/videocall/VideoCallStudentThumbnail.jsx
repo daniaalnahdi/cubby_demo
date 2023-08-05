@@ -23,7 +23,7 @@ const VideoCallStudentThumbnail = ({
               <>
                 <button
                   className='secondary-btn small-btn white-btn'
-                  style={{marginLeft: '25%', marginBottom: '10px'}}
+                  style={{marginBottom: '10px'}}
                   onClick={() => updatePullAside(idx)}>Pull Aside</button>
                 <VideoStudentOptions />
               </>

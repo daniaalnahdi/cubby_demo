@@ -379,15 +379,15 @@ textarea.white-textarea {
 }
 
 .video-student-thumbnail .overlay-content {
-  top: -50%;
-  left: -50%;
+  left: 25%;
+  position: relative;
   transform: translate(0%, -150%);
   -ms-transform: translate(0%, -150%);
   text-align: center;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 .video-student-thumbnail:hover img {
   filter: blur(2px);
