@@ -1,5 +1,8 @@
 # Cubby Demo
 
+Learn about Cubby here: https://www.notion.so/Cubby-Process-Book-55afa0be18a8426c9e5207fd84ad7b22?pvs=4
+Deployed at: https://cubby-demo.netlify.app/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
